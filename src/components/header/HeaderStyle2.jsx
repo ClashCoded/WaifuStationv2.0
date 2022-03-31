@@ -80,7 +80,18 @@ const HeaderStyle2 = () => {
                                     </form>
                                 </div>
                                 <nav id="main-nav" className="main-nav" ref={menuLeft} >
-                                    <ul id="menu-primary-menu" className="menu">
+                                <ul id="menu-primary-menu" className="menu">
+                                <li className="menu-item">
+                                    <a rel="home" href="/">Home</a>
+                                </li>
+                                <li className='menu-item'>
+                                    <a href="/explore-01">About</a>
+                                </li>
+                                <li  className='menu-item'> 
+                                <a href="/faq">FAQ</a>
+                                </li>
+                                    </ul>
+                                    {/* <ul id="menu-primary-menu" className="menu">
                                         {
                                             menus.map((data,index) => (
                                                 <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : '' } ${activeIndex === index ? 'active' : ''} ` }   >
@@ -102,7 +113,7 @@ const HeaderStyle2 = () => {
                                                 </li>
                                             ))
                                         }
-                                    </ul>
+                                    </ul> */}
                                 </nav>
                                 <div className="flat-search-btn flex">
                                 

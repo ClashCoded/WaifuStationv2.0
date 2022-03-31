@@ -1,15 +1,17 @@
 import './App.css';
 import {   Routes , Route } from 'react-router-dom';
-import { MoralisProvider } from 'react-moralis';
+import { Web3ReactProvider } from '@web3-react/core';
+import Web3 from 'web3';
 import routes from './pages/index'
 
-const moralisAppId = "R0iyVUllzbxv57nn0WLIlxW8Sz3fBB3YLtGKRc59";
-const moralisServerURL = "https://ajg5parj7pae.usemoralis.com:2053/server";
+function getLibrary(provider) {
+    return new Web3(provider)
+}
 
 const App = () => {
 
     return (
-        <MoralisProvider appId={moralisAppId} serverUrl={moralisServerURL}>
+        <Web3ReactProvider getLibrary={getLibrary}>
         <Routes >
             {
             routes.map((data,index) => (
@@ -17,7 +19,7 @@ const App = () => {
             ))
             }
       </Routes>
-      </MoralisProvider>
+</Web3ReactProvider>
     );
 }
 

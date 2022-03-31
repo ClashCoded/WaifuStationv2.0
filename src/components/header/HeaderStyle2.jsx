@@ -1,6 +1,7 @@
 import React , { useRef , useState , useEffect } from 'react';
 import { Link , useLocation } from "react-router-dom";
-import { useMoralis } from "react-moralis";
+import { useWeb3React } from '@web3-react/core';
+import { injected } from '../wallet/connector';
 import menus from "../../pages/menu";
 import DarkMode from './DarkMode';
 import logodark from '../../assets/images/logo/logo_dark.png'
@@ -9,8 +10,42 @@ import coin from '../../assets/images/logo/coin.svg'
 
 
 const HeaderStyle2 = () => {
-    const { authenticate, isAuthenticated } = useMoralis();
-    const { logout, isAuthenticating } = useMoralis();
+
+    const { active, account, library, connector, activate, deactivate } = useWeb3React()
+
+    async function connect(){
+        try {
+            await activate(injected)
+            localStorage.setItem('isWalletConnected', true)
+        } catch (ex) {
+            console.log(ex)
+        }
+    }
+
+    async function disconnect(){
+        try {
+            await deactivate(injected)
+            localStorage.setItem('isWalletConnected', false)
+        } catch (ex) {
+            console.log(ex)
+        }
+    }
+
+    useEffect(() => {
+        const connectWalletOnPageLoad = async () => {
+            if (localStorage?.getItem('isWalletConnected') === 'true') {
+                try {
+                    await active(injected)
+                    localStorage.setItem('isWalletConnected', true)
+                } catch (ex) {
+                    console.log(ex)
+                }
+            }
+        }
+        connectWalletOnPageLoad()
+    }, [])
+
+
     const { pathname } = useLocation();
 
     const headerRef = useRef (null)
@@ -80,18 +115,7 @@ const HeaderStyle2 = () => {
                                     </form>
                                 </div>
                                 <nav id="main-nav" className="main-nav" ref={menuLeft} >
-                                <ul id="menu-primary-menu" className="menu">
-                                <li className="menu-item">
-                                    <a rel="home" href="/">Home</a>
-                                </li>
-                                <li className='menu-item'>
-                                    <a href="/explore-01">About</a>
-                                </li>
-                                <li  className='menu-item'> 
-                                <a href="/faq">FAQ</a>
-                                </li>
-                                    </ul>
-                                    {/* <ul id="menu-primary-menu" className="menu">
+                                    <ul id="menu-primary-menu" className="menu">
                                         {
                                             menus.map((data,index) => (
                                                 <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : '' } ${activeIndex === index ? 'active' : ''} ` }   >
@@ -113,23 +137,18 @@ const HeaderStyle2 = () => {
                                                 </li>
                                             ))
                                         }
-                                    </ul> */}
+                                    </ul>
                                 </nav>
                                 <div className="flat-search-btn flex">
-                                
-                                {!isAuthenticated &&
-                                    (
-                                    <div className="sc-btn-top mg-r-12" id="site-header">
-                                        <button onClick={() => authenticate()} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
-                                        </span></button>
-                                    </div>
-                                    )}
-                                    {isAuthenticated &&
-                                    (
-                                <button onClick={() => logout()} disabled={isAuthenticating} className="sc-button header-slider style style-1 wallet fl-button pri-1">
-                                <span>Disconnect</span>
-                                </button>
-                                    )}
+                                {active ? 
+                                    <button onClick={disconnect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Disconnect
+                                        </span>
+                                        </button>
+
+                                    :
+                                    <button onClick={connect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
+                                        </span>
+                                        </button> }
 
                                     <div className="admin_active" id="header_admin">
                                         <div className="header_avatar">

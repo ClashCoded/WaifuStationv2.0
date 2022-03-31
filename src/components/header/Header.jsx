@@ -1,6 +1,7 @@
 import React , { useRef , useState , useEffect } from 'react';
 import { Link , useLocation } from "react-router-dom";
-import { useMoralis } from "react-moralis";
+import { useWeb3React } from '@web3-react/core';
+import { injected } from '../wallet/connector';
 import menus from "../../pages/menu";
 import DarkMode from './DarkMode';
 import logoheader from '../../assets/images/logo/logo.png'
@@ -12,8 +13,40 @@ import avt from '../../assets/images/avatar/avt-2.jpg'
 
 
 const Header = () => {
-    const { authenticate, isAuthenticated } = useMoralis();
-    const { logout, isAuthenticating } = useMoralis();
+    const { active, account, library, connector, activate, deactivate } = useWeb3React()
+
+    async function connect(){
+        try {
+            await activate(injected)
+            localStorage.setItem('isWalletConnected', true)
+        } catch (ex) {
+            console.log(ex)
+        }
+    }
+
+    async function disconnect(){
+        try {
+            await deactivate(injected)
+            localStorage.setItem('isWalletConnected', false)
+        } catch (ex) {
+            console.log(ex)
+        }
+    }
+
+    useEffect(() => {
+        const connectWalletOnPageLoad = async () => {
+            if (localStorage?.getItem('isWalletConnected') === 'true') {
+                try {
+                    await active(injected)
+                } catch (ex) {
+                    console.log(ex)
+                }
+            }
+        }
+        connectWalletOnPageLoad()
+    }, [])
+
+
     const { pathname } = useLocation();
 
 
@@ -105,26 +138,19 @@ const Header = () => {
                                             </form>
                                         </div>
                                     </div>
-                                    {!isAuthenticated &&
-                                    (
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-                                        <button onClick={() => authenticate()} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
+                                    {!active &&
+                                        <button onClick={connect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
                                         </span>
-                                        </button>
+                                        </button> 
+                                    }
+                                    {active &&
+                                        (<button onClick={disconnect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Disconnect
+                                        </span>
+                                        </button>) 
+                                    
+                                    }
                                     </div>
-                                    )
-                                    }
-                                    {isAuthenticated &&
-                                    (
-                               
-                                <button onClick={() => logout()} disabled={isAuthenticating} className="sc-button header-slider style style-1 wallet fl-button pri-1">
-                                <span>Disconnect</span>
-                                </button>
-                        
-                                    )
-                                    }
-                     
-
                                     <div className="admin_active" id="header_admin">
                                         <div className="header_avatar">
                                             <div className="price">

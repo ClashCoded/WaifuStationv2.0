@@ -36,7 +36,7 @@ import FAQ from "./FAQ";
 
 const routes = [
   { path: '/', component: <Home />},
-  { path: '/Gacha', component: <Gacha/>},
+  { path: '/gacha', component: <Gacha/>},
   { path: '/faq', component: <FAQ />},
 ]
 

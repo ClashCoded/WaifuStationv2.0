@@ -120,7 +120,7 @@ const HeaderStyle2 = () => {
                                         <a href="/">Home</a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="/Gacha">Gacha</a>
+                                        <a href="/gacha">Gacha</a>
                                     </li>
                                     <li className="menu-item">
                                         <a href="/faq">FAQ</a>

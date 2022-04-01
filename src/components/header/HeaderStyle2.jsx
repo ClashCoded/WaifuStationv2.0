@@ -117,13 +117,13 @@ const HeaderStyle2 = () => {
                                 <nav id="main-nav" className="main-nav" ref={menuLeft} >
                                     <ul id="menu-primary-menu" className="menu">
                                     <li className="menu-item">
-                                        <a href="/">Home</a>
+                                        <Link to="/" rel="home">Home</Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="/gacha">Gacha</a>
+                                        <Link to="/gacha" rel="gacha">Gacha</Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="/faq">FAQ</a>
+                                        <Link to="/faq" rel="faq">FAQ</Link>
                                     </li>
                                         {/* {
                                             menus.map((data,index) => (

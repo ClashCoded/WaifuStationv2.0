@@ -12725,6 +12725,14 @@ readers do not read off random characters that represent icons */
   src: url("../font/fa-solid-900.eot");
   src: url("../font/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../font/fa-solid-900.woff2") format("woff2"), url("../font/fa-solid-900.woff") format("woff"), url("../font/fa-solid-900.ttf") format("truetype"), url("../font/fa-solid-900.svg#fontawesome") format("svg"); }
 
+
+@font-face {
+  font-family: 'YEYEYE';
+  font-weight: 100;
+  src: url("../font/Yeyey.otf");
+}
+
+
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Pro';

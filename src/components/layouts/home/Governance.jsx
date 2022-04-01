@@ -1,4 +1,6 @@
 import React from "react"
+import img3 from "../../../assets/images/home/Images/iridescent.jpg"
+import smallLogo from "../../../assets/images/home/Images/about-logo.png"
 //assets
 function Governance() {
   return (
@@ -24,18 +26,21 @@ function Governance() {
         </div> */}
       </div>
       <div data-aos="fade-up" className="governance_left">
-        <model-viewer
-          src="/assets/3d/littletokyo.glb"
-          alt="littletokyo"
-          loading="lazy"
-          camera-controls
-          disable-zoom
-          field-of-view="30deg"
-          auto-rotate
-        />
-        {/* <div className="card-mine-gov big_card-mine">
+        <div className="card-mine-gov big_card-mine">
+          <img
+            data-aos="zoom-out-up"
+            className="absolute-image"
+            data-aos-delay="500"
+            src={smallLogo}
+            alt=""
+          />
           <img className="card-mine-img big_img" src={img3} alt="..." />
-        </div> */}
+          <p className="card-mine-title-gov">Waifu</p>
+          <div className="card-mine-lower-gov">
+            <p className="card-mine-lower-number-gov">#???</p>
+            <p className="card-mine-lower-rarity-gov">Iridescent</p>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -227,7 +227,7 @@ button,
 input,
 select,
 textarea {
-    font-family            : 'Urbanist', sans-serif;
+    font-family            : 'Jua', sans-serif;
     color                  : var(--primary-color2);
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1568,7 +1568,7 @@ header{
 
 .main-nav>ul>li>a {
     position     : relative;
-    font-size    : 18px;
+    font-size    : 25px;
     line-height  : 26px;
     font-weight  : 700;
     color        : #fff;
@@ -2265,7 +2265,7 @@ header{
 }
 
 #footer .widget p {
-    font-size  : 14px;
+    font-size  : 16px;
     line-height: 22px;
 }
 
@@ -2506,7 +2506,7 @@ header{
 }
 
 .widget-menu ul li a {
-    font-size  : 14px;
+    font-size  : 16px;
     line-height: 22px;
     position   : relative;
 }
@@ -3373,14 +3373,12 @@ header{
     letter-spacing: 1px;
   }
   .about_title2 {
-    font-family: "Changa";
+    font-family: 'YEYEYE';
     font-size: 6rem;
-    text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 2px;
   }
   .about_desc {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 1.6;
     width: 70%;
     margin-top: 2rem;
@@ -3388,14 +3386,15 @@ header{
   }
   .about_right button {
     margin-top: 5rem;
-    font-family: "Jua";
-    font-size: 1.6rem;
+    border: none;
+    font-size: 1.9rem;
   }
   .about_buy {
     border: none;
     border-radius: 15px;
-    color: var(--primary-color2);
+    color: #fbfbfb;
     width: 190px;
+    font-family: 'Changa';
     height: 50px;
     font-weight: 600;
     cursor: pointer;
@@ -3403,10 +3402,24 @@ header{
     text-transform: uppercase;
     transition: all 0.25s ease-in-out;
   }
+  .about_create {
+    border: none;
+    border-radius: 15px;
+    color: #fbfbfb;
+    width: 190px;
+    height: 50px;
+    font-family: 'Jua';
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #1d9bef;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+  }
   .about_buy:hover,
   .about_create:hover {
     transform: scale(0.9);
     opacity: 0.7;
+    color: #fbfbfb;
   }
   .about_card_container {
     position: relative;
@@ -3426,7 +3439,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
     text-align: left;
     gap: 10px;
     border-radius: 25px;
@@ -3462,11 +3474,11 @@ header{
       padding-bottom: 3rem;
     }
     .about_title2 {
-      font-size: 2.5rem;
+      font-size: 6rem;
     }
     .about_desc {
       width: 85%;
-      font-size: 1.1rem;
+      font-size: 1.9rem;
     }
   }
   @media screen and (max-width: 430px) {
@@ -3503,7 +3515,7 @@ header{
     letter-spacing: 1.5px;
   }
   .collection_p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 1.4;
     width: 40%;
     text-align: center;
@@ -3540,7 +3552,6 @@ header{
     font-size: 2.5rem;
   }
   .collect_left p {
-    color: var(--primarycolor2);
     font-size: 1.6rem;
     font-family: "Jua";
     line-height: 1.5;
@@ -3708,7 +3719,7 @@ header{
       font-size: 3rem;
     }
     .collect_left p {
-      font-size: 2rem;
+      font-size: 1.9rem;
       opacity: 1 !important;
       transform: translateX(0rem) !important;
     }
@@ -3736,7 +3747,7 @@ header{
   }
   @media screen and (max-width: 782px) {
     .collection_p {
-      font-size: 1.2rem;
+      font-size: 1.9rem;
       width: 90%;
     }
   
@@ -3745,10 +3756,6 @@ header{
     }
     .collect-div {
       width: 70%;
-    }
-    .collection_p {
-      font-size: 1.2rem;
-      width: 90%;
     }
   }
   @media screen and (max-width: 660px) {
@@ -3895,7 +3902,7 @@ header{
       min-height: 20vh;
     }
     .gang h1 {
-      font-size: 3rem;
+      font-size: 6rem;
     }
   }
   @media screen and (max-width: 436px) {
@@ -3968,7 +3975,7 @@ header{
     letter-spacing: 2px;
   }
   .governance_desc {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 1.6;
     width: 70%;
     margin-top: 2rem;
@@ -3977,55 +3984,26 @@ header{
   .governance_right button {
     margin-top: 1.5rem;
   }
-  .about_buy {
-    border: none;
-    border-radius: 15px;
-    color: white;
-    width: 190px;
-    height: 50px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #fa3f62;
-    text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
-  }
-  .about_create {
-    border: none;
-    border-radius: 15px;
-    color: white;
-    width: 190px;
-    height: 50px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #1d9bef;
-    text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
-  }
-  .about_buy:hover,
-  .about_create:hover {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
   .card-mine-gov {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: transparent;
-    width: 220px;
-    height: 280px;
+    background-color: #fbfbfb;
     text-align: left;
     gap: 10px;
-    padding: 10px 0px;
+    padding: 30px 0 10px;
     border-radius: 25px;
     /* transform: translateY(50px); */
     /* opacity: 0; */
-    padding-top: 30px;
     overflow: visible;
     transition: all 0.25s ease-in-out;
-    margin-right: 2rem;
+  }
+  .card-mine-img {
+      object-fit: contain;
+      -o-object-fit: contain;
+      border-radius: 25px;
+      transition: all 0.25s ease-in-out;
   }
   .big_card-mine {
     width: 320px;
@@ -4037,6 +4015,39 @@ header{
   
     pointer-events: none;
   }
+  .card-mine-title-gov {
+      align-self: flex-start;
+      margin-left: 10px;
+      text-align: left;
+      color: #272727;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: 'Jua';
+  }
+  .card-mine-lower-gov {
+      display:flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+  }
+  .card-mine-lower-number-gov {
+      color: #a8a8a8;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-family: 'Jua';
+  }
+
+  .card-mine-lower-rarity-gov {
+      padding: 3px 20px;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      color: #272727;
+      background: linear-gradient(90deg, #9cf6ff, #ffaead, #ffd7a6, #fdffb6, #cbffbf, #9cf6ff);
+
+  }
+
   @media screen and (max-width: 1036px) {
     .governance {
       flex-direction: column;
@@ -4061,11 +4072,11 @@ header{
       padding-bottom: 3rem;
     }
     .governance_title2 {
-      font-size: 2.5rem;
+      font-size: 6rem;
     }
     .governance_desc {
       width: 85%;
-      font-size: 1.1rem;
+      font-size: 1.9rem;
     }
     model-viewer {
       width: 70vw;
@@ -4088,7 +4099,7 @@ header{
   .powered {
     min-height: 60vh;
     overflow: visible;
-    background-image: url("../../Assets/Powered\ By/bg.jpg");
+    background-image: url("../images//item-background/bg.jpg");
     height: auto;
     width: 100%;
     background-repeat: no-repeat;
@@ -4137,7 +4148,7 @@ header{
   }
   @media screen and (max-width: 500px) {
     .powered h1 {
-      font-size: 2.5rem;
+      font-size: 6rem;
     }
     .power_grid {
       width: 100%;

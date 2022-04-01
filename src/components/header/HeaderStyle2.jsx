@@ -150,16 +150,20 @@ const HeaderStyle2 = () => {
                                 </nav>
                                 <div className="flat-search-btn flex">
                                 {active ? 
+                             <div className="sc-btn-top mg-r-12" id="site-header">
                                     <button onClick={disconnect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Disconnect
                                         </span>
                                         </button>
-
+                                    </div>
                                     :
+                                    <div className="sc-btn-top mg-r-12" id="site-header">
                                     <button onClick={connect} className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
                                         </span>
-                                        </button> }
+                                        </button>
+                                        </div> 
+                                        }
 
-                                    <div className="admin_active" id="header_admin">
+                                    {/* <div className="admin_active" id="header_admin">
                                         <div className="header_avatar">
                                             <div className="price">
                                                 <span>2.45 <strong>ETH</strong> </span>
@@ -201,7 +205,7 @@ const HeaderStyle2 = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div> 
                         </div>

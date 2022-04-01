@@ -1,4 +1,6 @@
+import React, { useEffect } from 'react';
 import './App.css';
+import AOS from 'aos';
 import {   Routes , Route } from 'react-router-dom';
 import { Web3ReactProvider } from '@web3-react/core';
 import Web3 from 'web3';
@@ -9,6 +11,14 @@ function getLibrary(provider) {
 }
 
 const App = () => {
+
+    useEffect(() => {
+        AOS.init({
+          once: true,
+        });
+        AOS.refresh();
+      }, []);
+    
 
     return (
         <Web3ReactProvider getLibrary={getLibrary}>

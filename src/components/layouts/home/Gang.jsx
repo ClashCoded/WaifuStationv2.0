@@ -1,28 +1,36 @@
-import React, { useEffect } from "react"
-import img1 from "../../../assets/images/home/Team/test1-no-bg.png"
-import img2 from "../../../assets/images/home/Team/test2-no-bg.png"
-import img3 from "../../../assets/images/home/Team/test3-no-bg.png"
-import img4 from "../../../assets/images/home/Team/test4-no-bg.png"
-import img5 from "../../../assets/images/home/Team/test5-no-bg.png"
-import img6 from "../../../assets/images/home/Team/test6-no-bg.png"
-import img7 from "../../../assets/images/home/Team/test7-no-bg.png"
-import img8 from "../../../assets/images/home/Team/test8-no-bg.png"
-import discord from "../../../assets/images/home/Team/join-discord.png"
-import AOS from "aos"
-import "aos/dist/aos.css"
+import React, { useEffect } from "react";
+import img1 from "../../../assets/images/home/Team/test1-no-bg.png";
+import img2 from "../../../assets/images/home/Team/test2-no-bg.png";
+import img3 from "../../../assets/images/home/Team/test3-no-bg.png";
+import img4 from "../../../assets/images/home/Team/test4-no-bg.png";
+import img5 from "../../../assets/images/home/Team/test5-no-bg.png";
+import img6 from "../../../assets/images/home/Team/test6-no-bg.png";
+import img7 from "../../../assets/images/home/Team/test7-no-bg.png";
+import img8 from "../../../assets/images/home/Team/test8-no-bg.png";
+import discord from "../../../assets/images/home/Team/join-discord.png";
+import waifuDemo from "../../../assets/images/home/Video/WaifustationDemo.mp4"
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Gang() {
   useEffect(() => {
     AOS.init({
       once: true,
-    })
-    AOS.refresh()
-  }, [])
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div id="gang" className="gang">
       <h1 data-aos="fade-up">Let's Join the gang!</h1>
+      <video style={{width:'1000px', borderRadius:'25px'}} muted autoPlay controls controlsList="nodownload noplaybackrate" disablePictureInPicture> 
+        <source src={waifuDemo} type="video/mp4" />
+      </video>
       <div data-aos="fade-up" data-aos-delay="50" className="gang_btn-div">
-      <a className="a-gang-button" href="http://discord.gg/BQacmjg8kg" target="__blank">
-        <img className="discord-button" src={discord} alt="discord" />
+        <a
+          className="a-gang-button"
+          href="http://discord.gg/BQacmjg8kg"
+          target="__blank"
+        >
+          <img className="discord-button" src={discord} alt="discord" />
         </a>
       </div>
       <div className="gang-absolute">
@@ -80,7 +88,7 @@ function Gang() {
           alt="..."
           className="gang-img6"
         />
-         <img
+        <img
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-delay="1200"
@@ -109,7 +117,7 @@ function Gang() {
         /> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default Gang
+export default Gang;

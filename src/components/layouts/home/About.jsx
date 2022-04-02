@@ -5,10 +5,10 @@ import AboutCard from "./AboutCard"
 function About() {
   return (
     <div id="about" className="about">
-      <div className="about_left">
+      <div className="about_left" data-aos-delay="500" data-aos="zoom-out-up">
          <AboutCard data={aboutCardData}/>
       </div>
-      <div className="about_right">
+      <div className="about_right" data-aos="fade-up">
         <h4 className="about_title">妻ステーションへようこそ</h4>
         <h2 className="about_title2">
           Welcome to <br /> Waifustation

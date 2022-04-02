@@ -3,6 +3,7 @@ import Header from '../components/header/HeaderStyle2';
 import About from '../components/layouts/home/About';
 import Collection from '../components/layouts/home/Collection';
 import Governance from '../components/layouts/home/Governance';
+import Roadmap from '../components/layouts/home/Roadmap';
 import Powered from '../components/layouts/home/Powered';
 import Gang from '../components/layouts/home/Gang';
 import Footer from '../components/footer/Footer';
@@ -17,6 +18,7 @@ const Home = () => {
             <About />
             <Collection />
             <Governance />
+            <Roadmap />
             <Powered />
             <Gang />
             <Footer />

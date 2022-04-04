@@ -34,7 +34,8 @@ function Roadmap() {
           </div>
           <div className="right-pointer">
             <h4 className="roadmap-title">Launch</h4>
-            <p>• The Drop</p>
+            <p>• Waifu Auctions</p>
+            <p>• Spring Drop</p>
           </div>
         </div>
         <div
@@ -54,12 +55,9 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q2 2022</h4>
             <p>
-              • Prize Lottery
-              <br /> • Decentraland
-              <br />
-              metaverse storefront
-              <br /> • NFT gachapons
-              <br /> • Game asset gachapons <br /> • Kyoto Animation Donation
+              • Summer Drop
+              <br /> • Metaverse storefronts
+              <br /> • Prize Lottery
             </p>
           </div>
         </div>
@@ -80,11 +78,9 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q3 2022</h4>
             <p>
-              • Sandbox metaverse storefront
-              <br />• Somnium Space metaverse storefront
-              <br />• Cross chain
-              <br />• DAO governance
-              <br />• Celebrity endorsement
+              • Fall Drop
+              <br />• Community-owned gachapons
+              <br />• Kyoto Animation Donation
             </p>
           </div>
         </div>
@@ -105,12 +101,9 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q4 2022</h4>
             <p>
-              • Matrix World
-              <br />
-              metaverse storefront
-              <br /> • New arcade games
-              <br /> • Crypto crate gachapons
-              <br /> • Secret drop
+              • Winter Drop
+              <br /> • User-owned gachapons
+              <br /> • Special Event
             </p>
           </div>
         </div>
@@ -131,9 +124,13 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Beyond</h4>
             <p>
-              • Open storefronts in new
+              • 2023 Roadmap
               <br />
-              DAO proposed metaverses
+              • Waifustation DAO
+              <br />
+              • Multi-chain
+              <br />
+              • Multiverse Expansion
             </p>
           </div>
         </div>

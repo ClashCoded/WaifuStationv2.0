@@ -7,7 +7,7 @@ import img5 from "../../../assets/images/home/Images/make-history.png"
 import img6 from "../../../assets/images/home/Images/royalties.png"
 import img7 from "../../../assets/images/home/Images/ownership.png"
 import img8 from "../../../assets/images/home/Images/limited.png"
-import circle from "../../../assets/images/home/Images/circle.png"
+import circle from "../../../assets/images/home/Images/circle2.png"
 function Collection() {
   // const clickHandler = (e) => {
   //   const mobile = window.innerWidth;

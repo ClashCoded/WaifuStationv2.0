@@ -2,11 +2,8 @@ import React , { useRef , useState , useEffect } from 'react';
 import { Link , useLocation } from "react-router-dom";
 import { useWeb3React } from '@web3-react/core';
 import { injected } from '../wallet/connector';
-import menus from "../../pages/menu";
 import DarkMode from './DarkMode';
 import logodark from '../../assets/images/logo/logo_dark.png'
-import avt from '../../assets/images/avatar/avt-2.jpg'
-import coin from '../../assets/images/logo/coin.svg'
 
 
 const HeaderStyle2 = () => {

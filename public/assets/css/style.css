@@ -1317,9 +1317,9 @@ a:focus {
 
 :root {
     /* color */
-    --primary-color : #fff;
-    --primary-color2: #1F1F2C;
-    --primary-color3: #5142FC;
+    --primary-color : #fcfcfc;
+    --primary-color2: #1b1b1b;
+    --primary-color3: #FD9DCB;
     --primary-color4: #7A798A;
     --primary-color5: #F8F8F8;
     --primary-color6: #14141F;
@@ -1331,14 +1331,14 @@ a:focus {
 }
 
 .is_dark {
-    --primary-color: #343444;
-    --primary-color2 : #fff;
+    --primary-color: #272727;
+    --primary-color2 : #fcfcfc;
     --primary-color4: rgba(255,255,255,0.9);
-    --primary-color5: #030303;
+    --primary-color5: #1b1b1b;
     --primary-color6: #ffffff;
     --primary-color7: #343444;
-    --bg-section: #14141F;
-    --bg-section2 : #14141F;
+    --bg-section: #272727;
+    --bg-section2 : #272727;
     --primary-color8: #fff;
     --primary-color9: #8A8AA0;
 }
@@ -1570,7 +1570,8 @@ header{
     position     : relative;
     font-size    : 25px;
     line-height  : 26px;
-    font-weight  : 700;
+    font-family: 'Yeyeye';
+    font-weight  : normal;
     color        : #fff;
     padding-right: 15.5px;
 }
@@ -2206,7 +2207,7 @@ header{
 }
 .is_dark .home-5 #footer,
 .is_dark .home-3 #footer {
-    background: #0D0D11 !important;
+    background: #1b1b1b !important;
 }
 .is_dark #footer.style-2{
     background-color: #14141F;
@@ -2230,7 +2231,7 @@ header{
     -ms-border-radius    : 50%;
     -o-border-radius     : 50%;
     cursor               : pointer;
-    background-color: #5142FC;
+    background-color: #FD9DCB;
 }
 .is_dark #scroll-top {
     background: #fff;
@@ -2240,12 +2241,12 @@ header{
     content    : "\f077";
     font-family: "Font Awesome 5 Pro";
     font-size  : 18px;
-    color      : #ffffff;
+    color      : #fcfcfc;
     font-weight: 600;
 }
 
 .is_dark #scroll-top:after {
-    color      : #5142FC;
+    color      : #FD9DCB;
 }
 
 #scroll-top:hover {
@@ -3373,7 +3374,8 @@ header{
     letter-spacing: 1px;
   }
   .about_title2 {
-    font-family: 'YEYEYE';
+    font-family: 'YeYeYe';
+    font-weight: normal;
     font-size: 6.5rem;
     letter-spacing: 2px;
   }
@@ -3396,7 +3398,6 @@ header{
     width: 190px;
     font-family: 'Jua';
     height: 50px;
-    font-weight: 600;
     cursor: pointer;
     background-color: #fa3f62;
     text-transform: uppercase;
@@ -3508,10 +3509,10 @@ header{
   }
   .collection_head {
     font-family: "YeYeYe";
+    font-weight: normal;
     color: var(--primarycolor2);
     font-size: 6.5rem;
     text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 1.5px;
   }
   .collection_p {
@@ -3854,10 +3855,10 @@ header{
 
   .governance_title2 {
     font-family: "YeYeYe";
+    font-weight: normal;
     color: var(--primary-color2);
     font-size: 6.5rem;
     text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 2px;
   }
   .governance_desc {
@@ -3875,7 +3876,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fbfbfb;
+    background-color: #272727;
     text-align: left;
     gap: 10px;
     padding: 30px 0 10px;
@@ -3885,6 +3886,9 @@ header{
     overflow: visible;
     transition: all 0.25s ease-in-out;
   }
+  .is_dark .card-mine-gov {
+    background: #fcfcfc;
+}
   .card-mine-img {
       object-fit: contain;
       -o-object-fit: contain;
@@ -3905,10 +3909,13 @@ header{
       align-self: flex-start;
       margin-left: 10px;
       text-align: left;
-      color: #272727;
+      color: #fcfcfc;
       font-size: 1.5rem;
       font-weight: 500;
       font-family: 'Jua';
+  }
+  .is_dark .card-mine-title-gov {
+    color: #272727;
   }
   .card-mine-lower-gov {
       display:flex;
@@ -3989,6 +3996,7 @@ header{
   }
   .roadmap h1 {
     font-family: "YeYeYe";
+    font-weight: normal;
     color: var(--primary-color2);
     font-size: 6.5rem;
     text-transform: uppercase;
@@ -4033,7 +4041,7 @@ header{
     object-fit: contain;
   }
   .roadmap-pointer {
-    font-family: "Jua";
+
   }
   .right-pointer {
     color: white;
@@ -4046,12 +4054,13 @@ header{
   .right-pointer h4 {
     font-size: 3rem;
     padding: 0px;
+    font-family: 'Jua';
     margin: 0px;
     overflow: visible;
   }
   .right-pointer p {
     font-family: "Jua";
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 0px;
     margin: 0px;
     line-height: 1.5;
@@ -4089,7 +4098,11 @@ header{
     top: 30%;
     left: 55%;
   }
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: 1200px) {
+
+    .roadmap-bg {
+      transform: translate(90deg);
+    }
     .right-pointer h4 {
       font-size: 1.2rem;
     }
@@ -4297,16 +4310,16 @@ header{
   }
   .partners-h1{
     font-family: "YeYeYe";
+    font-weight: normal;
     font-size: 6.5rem;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 5rem;
   }
   .powered-by-title {
     font-family: "YeYeYe";
+    font-weight: normal;
     font-size: 6.5rem;
     text-transform: uppercase;
-    font-weight: 600;
   }
   .power_grid {
     display: flex;
@@ -4359,6 +4372,7 @@ header{
   }
   .gang h1 {
     font-family: "YeYeYe";
+    font-weight: normal;
     color: var(--primary-color2);
     font-size: 8rem;
     text-transform: uppercase;
@@ -4384,7 +4398,6 @@ header{
     align-items: center;
     border-radius: 25px;
     color: white;
-    font-weight: 600;
     gap: 12px;
   }
   .btn-gang i {

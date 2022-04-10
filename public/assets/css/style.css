@@ -1324,6 +1324,8 @@ a:focus {
     --primary-color5: #F8F8F8;
     --primary-color6: #14141F;
     --primary-color7: #F8F8F8;
+    --background-color1:#fcfcfc;
+    --background-color2: #E3E3E3;
     --bg-section : #fff;
     --bg-section2 : #f8f8f8;
     --primary-color8: #7A798A;
@@ -1337,6 +1339,8 @@ a:focus {
     --primary-color5: #1b1b1b;
     --primary-color6: #ffffff;
     --primary-color7: #343444;
+    --background-color1:#272727;
+    --background-color2: #1b1b1b;
     --bg-section: #272727;
     --bg-section2 : #272727;
     --primary-color8: #fff;
@@ -3329,12 +3333,17 @@ header{
   }
   .about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color) ;
+    background-color: var(--background-color1) ;
     height: auto;
-    padding: 7rem 0rem;
     overflow: visible;
+  }
+  .about_seperator {
+    display: flex;
+    flex-direction: row;
+    padding: 7rem 0;
   }
   .about_left,
   .about_right {
@@ -3461,6 +3470,11 @@ header{
       flex-direction: column;
       gap: 4rem;
     }
+    .about_seperator {
+      display: flex;
+      flex-direction: column;
+      padding: 7rem 0;
+    }
     .about_right {
       align-items: center;
       text-align: center;
@@ -3472,7 +3486,7 @@ header{
       top: -23%;
     }
     .about {
-      padding-bottom: 3rem;
+
     }
     .about_title2 {
       font-size: 6rem;
@@ -3496,7 +3510,7 @@ header{
     overflow: hidden;
   }
   .collection {
-    background-color: var(--primary-color);
+    background-color: var(--background-color2);
     min-height: 50vh;
     height: auto;
     width: 100%;
@@ -3504,7 +3518,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 7rem 0rem;
+    padding-top: 7rem;
     /* overflow: hidden; */
   }
   .collection_head {
@@ -3529,6 +3543,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-bottom: 7rem;
   }
   .circle-img {
     max-width: 50%;
@@ -3813,12 +3828,16 @@ header{
   .governance {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
     height: auto;
-    padding: 7rem 0;
-    padding-bottom: 7rem;
     overflow: visible;
+  }
+  .governance_seperator {
+    display: flex;
+    flex-direction: row;
+    padding: 7.5rem 0;
   }
   .governance_left,
   .governance_right {
@@ -3902,7 +3921,7 @@ header{
     position: relative;
     overflow: visible;
     margin-right: 0px;
-  
+    margin-bottom: 40px;
     pointer-events: none;
   }
   .card-mine-title-gov {
@@ -3945,7 +3964,9 @@ header{
     .governance {
       flex-direction: column;
       gap: 4rem;
-      padding-bottom: 2rem;
+    }
+    .governance_left {
+      padding-top: 5rem;
     }
     .governance_right {
       align-items: center;
@@ -3961,9 +3982,10 @@ header{
       right: 23%;
       top: -23%;
     }
-    .governance {
-      padding-bottom: 3rem;
+    .governance_left {
+      padding-top: 10rem;
     }
+
     .governance_title2 {
       font-size: 6rem;
     }
@@ -3989,10 +4011,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color2);
     height: auto;
     min-height: 78vh;
+    padding-top: 7rem;
     flex-direction: column;
-    padding: 7rem 0rem;
   }
   .roadmap h1 {
     font-family: "YeYeYe";
@@ -4013,6 +4036,7 @@ header{
     margin-top: 2rem;
     position: relative;
     overflow: visible;
+    padding-bottom: 7rem;
   }
   .roadmap-bg {
     border-radius: 65px;
@@ -4110,20 +4134,24 @@ header{
       font-size: 0.9rem;
     }
     .pointer-div1 {
-      top: 2.5%;
+      top: 25%;
+      left: -17%;
     }
     .pointer-div2 {
-      left: 8%;
+      left: 3%;
+      top: 57%;
     }
     .pointer-div3 {
-      left: 43%;
+      left: 23%;
+      top: 25%;
     }
     .pointer-div4 {
-      left: 9%;
+      left: 40%;
+      top: 57%;
     }
     .pointer-div5 {
-      top: 79%;
-      left: 44%;
+      top: 25%;
+      left: 57%;
     }
   }
   @media screen and (max-width: 632px) {
@@ -4306,7 +4334,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem 0rem;
+    padding-top: 7rem;
   }
   .partners-h1{
     font-family: "YeYeYe";
@@ -4327,7 +4355,7 @@ header{
     align-items: center;
     width: 70%;
     flex-wrap: wrap-reverse;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     gap: 1rem;
   }
   .power_img {
@@ -4387,6 +4415,10 @@ header{
   }
   .a-gang-button {
     text-decoration: none;
+  }
+  .waifu_demo {
+    border-radius: 25px;
+    width: 55%;
   }
   .btn-gang {
     border: none;

@@ -21,7 +21,7 @@ function Gang() {
   return (
     <div id="gang" className="gang">
       <h1 data-aos="fade-up">Let's Join the gang!</h1>
-      <video style={{width:'1000px', borderRadius:'25px'}} muted autoPlay controls controlsList="nodownload noplaybackrate" disablePictureInPicture> 
+      <video className="waifu_demo" muted autoPlay controls controlsList="nodownload noplaybackrate" disablePictureInPicture> 
         <source src={waifuDemo} type="video/mp4" />
       </video>
       <div data-aos="fade-up" data-aos-delay="50" className="gang_btn-div">

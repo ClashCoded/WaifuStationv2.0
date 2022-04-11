@@ -35,7 +35,7 @@ const SliderStyle2 = () => {
                         modules={[ Autoplay ]}
                         direction={"vertical"}
                         spaceBetween={10}
-                        slidesPerView={5}
+                        slidesPerView='auto'
                         loop
                         autoplay={{
                             delay: 1,
@@ -44,18 +44,18 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2000}
                     >
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
                         modules={[ Autoplay ]}
                         direction={"vertical"}
                         spaceBetween={10}
-                        slidesPerView={5}
+                        slidesPerView='auto'
                         loop
                         autoplay={{
                             delay: 1,
@@ -64,18 +64,18 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2100}
                     >
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
                         modules={[ Autoplay ]}
                         direction={"vertical"}
                         spaceBetween={10}
-                        slidesPerView={5}
+                        slidesPerView='auto'
                         loop
                         autoplay={{
                             delay: 1,
@@ -84,18 +84,18 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2200}
                     >
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
                         modules={[ Autoplay ]}
                         direction={"vertical"}
                         spaceBetween={10}
-                        slidesPerView={5}
+                        slidesPerView='auto'
                         loop
                         autoplay={{
                             delay: 1,
@@ -105,11 +105,11 @@ const SliderStyle2 = () => {
                         speed= {2000}
                         className="end"
                     >
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Axies" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Axies" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                    

@@ -15,12 +15,12 @@ const AboutCard = props => {
                             <div key={index}>
                                 <div className="sc-card-product" style={{backgroundColor:"var(--primary-color5)"}}>
                                     <div className="card-media">
-                                        <Link to="/item-details-01"><img src={item.img} alt="axies" /></Link>
+                                        <Link to="/gacha-details"><img src={item.img} alt="axies" /></Link>
                                         <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                         <div className="coming-soon">{item.feature}</div>
                                     </div>
                                     <div className="card-title">
-                                        <h5 className="style2"><Link to="/item-details-01">"{item.title}"</Link></h5>
+                                        <h5 className="style2"><Link to="/gacha-details">"{item.title}"</Link></h5>
                                         <div className="tags">{item.tags}</div>
                                     </div>
                                     <div className="meta-info">

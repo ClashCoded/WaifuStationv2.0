@@ -14,13 +14,15 @@ import nvidia from "../../../assets/images/home/Powered/nvidia.png";
 import sandbox from "../../../assets/images/home/Powered/sandbox.png";
 import somnium from "../../../assets/images/home/Powered/somnium.png";
 import matrix from "../../../assets/images/home/Powered/matrix.png";
-import partner1 from "../../../assets/images/home/Powered/partners (2).png"
+import partner1 from "../../../assets/images/home/Powered/partners (2).png";
+import bgpowered from "../../../assets/images/home/Images/background.jpg";
 
 
 function Powered() {
   return (
     <div className="powered">
-    <h4 className="about_title" data-aos="fade-up">パートナー</h4>
+              <svg class="wave-poweredby" version="1.1" xmlns="http://www.w3.org/2000/svg" style={{overflow: "visible"}} viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" fill="var(--background-color2)"></path></svg>
+    <h4 className="powered_title" data-aos="fade-up">パートナー</h4>
     <h1 data-aos="fade-up" className="partners-h1">Partners</h1>
     <div data-aos="fade-up" data-aos-delay="300" className="power_grid">
     <img src={partner1} alt="" className="power_img" />

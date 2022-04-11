@@ -1753,7 +1753,6 @@
 .wave-qsoVIt {
   position: relative;
   bottom: 0;
-  color: white;
   bottom: 0; 
   border: 0;
   left: 0;
@@ -1761,6 +1760,15 @@
 .wavePath-22lfEN {
   -webkit-animation: waveDividerAnimation-2kPl3C 20s linear infinite alternate;
     animation: waveDividerAnimation-2kPl3C 10s linear infinite alternate;
+}
+
+.wave-poweredby {
+  position: relative;
+  transform: scaleY(-1);
+  bottom: 0;
+  bottom: 0; 
+  border: 0;
+  left: 0;
 }
 
 @-webkit-keyframes waveDividerAnimation-2kPl3C {

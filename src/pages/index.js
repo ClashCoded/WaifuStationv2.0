@@ -7,6 +7,7 @@
 // import Home07 from "./Home07";
 import Home from "./Home";
 import Gacha from "./Gacha";
+import GachaDetails from "./GachaDetails";
 // import Home08 from "./Home08";
 // import Explore01 from "./Explore01";
 // import Explore02 from "./Explore02";
@@ -37,6 +38,7 @@ import FAQ from "./FAQ";
 const routes = [
   { path: '/', component: <Home />},
   { path: '/gacha', component: <Gacha/>},
+  { path: '/gacha-details', component: <GachaDetails/>},
   { path: '/faq', component: <FAQ />},
 ]
 

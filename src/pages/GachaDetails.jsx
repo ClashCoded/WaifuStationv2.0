@@ -16,7 +16,8 @@ import img6 from '../assets/images/avatar/avt-8.jpg'
 import img7 from '../assets/images/avatar/avt-2.jpg'
 import imgdetail1 from '../assets/images/box-item/images-item-details.jpg'
 
-const GachaDetails = () => {
+const GachaDetails = props => {
+
     const [dataHistory] = useState(
         [
             {

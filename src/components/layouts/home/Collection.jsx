@@ -26,8 +26,9 @@ function Collection() {
   // };
   return (
     <div id="collection" className="collection">
-    <svg class="wave-poweredby" version="1.1" xmlns="http://www.w3.org/2000/svg" style={{overflow: "visible"}} viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" fill="var(--background-color1)"></path></svg>
-        <div className="flat-title-page" style={{backgroundImage: `url(${imgbg})`}}>
+    <div className="flat-title-page" style={{backgroundImage: `url(${imgbg})`, padding: "0"}}>
+    <div className="overlay"></div>
+    <svg class="wave-poweredby" style={{overflow: "visible"}} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="var(--background-color1)"></path></svg>
         <img className="bgr-gradient gradient1" src={shape1} alt="Axies" />
         <img className="bgr-gradient gradient2" src={shape2} alt="Axies" />
         <img className="bgr-gradient gradient3" src={shape3} alt="Axies" />
@@ -38,8 +39,8 @@ function Collection() {
         <div className="shape style2 item-w-51"></div>
         <div className="shape style2 item-w-51 position2"></div>
         <div className="shape item-w-68"></div>
-        <div className="overlay"></div>
-      <h4 className="about_title" data-aos="fade-up">
+
+      <h4 className="collection_title" data-aos="fade-up">
         利点
       </h4>
       <h1 className="collection_head" data-aos="fade-up">
@@ -54,6 +55,7 @@ function Collection() {
           data-aos-delay="600"
           src={circle}
           alt=""
+          style={{opacity: 0}}
           className="circle-img"
         />
         <div
@@ -190,8 +192,9 @@ function Collection() {
           </div>
         </div>
         </div>
+        <svg class="wave-qsoVIt"  style={{overflow: "visible"}} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="var(--background-color1)"></path></svg>
         </div>
-      <svg class="wave-qsoVIt" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="var(--background-color1)"></path></svg>
+    
     </div>
   )
 }

@@ -13,11 +13,15 @@ import img6 from '../../assets/images/box-item/item-h5.6.png'
 import img7 from '../../assets/images/box-item/item-h5.7.png'
 import img8 from '../../assets/images/box-item/item-h5.8.png'
 import img9 from '../../assets/images/box-item/item-h5.9.png'
+import img10 from '../../assets/images/box-item/item-h5.10.png'
+import img11 from '../../assets/images/box-item/item-h5.11.png'
+import img12 from '../../assets/images/box-item/item-h5.12.png'
+import img13 from '../../assets/images/box-item/item-h5.13.png'
 
 const SliderStyle2 = () => {
-    const subtitle = 'NFT MARKETPLACE'
-    const title = 'Discover, find and sell extraordinary monster NFTs'
-    const description = 'Marketplace for monster character cllections non fungible token NFTs'
+    const subtitle = 'Waifustation'
+    const title = 'Community owned gachapon arcades in the multiverse'
+    const description = 'Participate in the founders drop'
     return (
         <section className="flat-title-page home5">
             <div className="overlay"></div>
@@ -30,10 +34,10 @@ const SliderStyle2 = () => {
                         <p className="sub-heading mg-t-7 mg-bt-39">{description}
                         </p>
                         <div className="flat-bt-slider style2 flex">
-                            <a href="/create-item" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Create
+                            <a href="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
                             </span></a>
-                            <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
-                            </span></a>
+                            {/* <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
+                            </span></a> */}
                         </div>
                     </div>
 
@@ -50,10 +54,10 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2000}
                     >
+                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img4} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img5} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img4} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img6} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img5} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
@@ -70,11 +74,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2100}
                     >
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img6} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img7} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img8} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img10} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -90,9 +94,9 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2200}
                     >
-                        <SwiperSlide><img src={img7} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img7} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img11} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img12} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img13} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img8} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
 

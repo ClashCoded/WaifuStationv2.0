@@ -1,0 +1,116 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "lootboxOptions",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_eggClasses",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "randomizedNumber",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "selectedOption",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "RandomSelected",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "getEggLootBoxState",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "selectedOption",
+                "type": "uint256"
+            }
+        ],
+        "name": "mintAndOpen",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "randomClass",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "newLootBoxOptions",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "newEggClasses",
+                "type": "uint256"
+            }
+        ],
+        "name": "setEggLootBoxState",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "lootBox",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "probabilities",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "setEggOptionClasses",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

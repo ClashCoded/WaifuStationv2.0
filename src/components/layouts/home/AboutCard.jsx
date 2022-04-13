@@ -15,7 +15,18 @@ const AboutCard = props => {
                             <div key={index}>
                                 <div className="sc-card-product" style={{backgroundColor:"var(--primary-color5)"}}>
                                     <div className="card-media">
-                                        <Link to="/gacha-details"><img src={item.img} alt="axies" /></Link>
+                                    <model-viewer
+                                    src="/assets/Gachapon.glb"
+                                    poster="/images/littletokyo.jpg"
+                                    alt="gachapon"
+                                    loading="lazy"
+                                    camera-controls
+                                    disable-zoom
+                                    style={{width: "317px", height: "317px"}}
+                                    field-of-view="30deg"
+                                    camera-orbit="120deg"
+                                    auto-rotate
+                                    />
                                         <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                         <div className="coming-soon">{item.feature}</div>
                                     </div>

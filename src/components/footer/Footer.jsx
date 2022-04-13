@@ -4,24 +4,9 @@ import logodark from '../../assets/images/logo/logo_dark.png'
 import logofooter from '../../assets/images/logo/logo2.png'
 const Footer = () => {
     const accountList = [
-        {
-            title: "Authors",
-            link: "/authors-01"
-        },
-        {
-            title: "Collection",
-            link: "/wallet-connect"
-        },
-        {
-            title: "Author Profile",
-            link: "/edit-profile"
-        },
-        {
-            title: "Create Item",
-            link: "/create-item"
-        },
+
     ]
-    const resourcesList = [
+    const navigateList = [
         {
             title: "Help & Support",
             link: "/help-center"
@@ -40,22 +25,6 @@ const Footer = () => {
         },
     ]
     const companyList = [
-        {
-            title: "Explore",
-            link: "/explore-01"
-        },
-        {
-            title: "Contact Us",
-            link: "/contact-01"
-        },
-        {
-            title: "Our Blog",
-            link: "/blog"
-        },
-        {
-            title: "FAQ",
-            link: "/faq"
-        },
     ]
     const socialList = [
         {
@@ -141,10 +110,10 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-7 col-7">
                             <div className="widget widget-menu style-2">
-                                <h5 className="title-widget">Resources</h5>
+                                <h5 className="title-widget">Navigate</h5>
                                 <ul>
                                     {
-                                        resourcesList.map((item,index) =>(
+                                        navigateList.map((item,index) =>(
                                             <li key={index}><Link to={item.link}>{item.title}</Link></li>
                                         ))
                                     }
@@ -165,13 +134,6 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-7 col-12">
                             <div className="widget widget-subcribe">
-                                <h5 className="title-widget">Subscribe Us</h5>
-                                <div className="form-subcribe">
-                                    <form id="subscribe-form" action="#" method="GET" acceptCharset="utf-8" className="form-submit">
-                                        <input name="email"  className="email" type="email" placeholder="info@yourgmail.com" required />
-                                        <button id="submit" name="submit" type="submit"><i className="icon-fl-send"></i></button>
-                                    </form>
-                                </div>
                                 <div className="widget-social style-1 mg-t32">
                                     <ul>
                                         {

@@ -31,6 +31,7 @@ import GachaDetails from "./GachaDetails";
 // import SignUp from "./SignUp";
 // import NoResult from "./NoResult";
 import FAQ from "./FAQ";
+import Mint from "./Mint";
 // import Contact01 from "./Contact01";
 // import Contact02 from "./Contact02";
 
@@ -39,6 +40,7 @@ const routes = [
   { path: '/', component: <Home />},
   { path: '/gacha', component: <Gacha/>},
   { path: '/gacha-details', component: <GachaDetails/>},
+  { path: '/mint', component: <Mint />},
   { path: '/faq', component: <FAQ />},
 ]
 

@@ -3380,6 +3380,7 @@ header{
     color: #ffc683;
     font-size: 2rem;
     font-weight: 400;
+    text-align: center;
     letter-spacing: 1px;
   }
   .about_title2 {
@@ -3520,16 +3521,26 @@ header{
     justify-content: center;
     /* overflow: hidden; */
   }
+  .collection_title {
+    font-family: "Mochiy Pop P One";
+    color: #ffc683;
+    font-size: 2rem;
+    padding-top: 7rem;
+    font-weight: 400;
+    text-align: center;
+  }
   .collection_head {
     font-family: "YeYeYe";
     font-weight: normal;
     color: var(--primarycolor2);
     font-size: 6.5rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
   .collection_p {
     font-size: 1.9rem;
+    margin: 0 auto;
     line-height: 1.4;
     width: 40%;
     text-align: center;
@@ -3553,6 +3564,7 @@ header{
     display: flex;
     justify-content: center;
     width: 32%;
+    z-index: 1;
   }
   .collect_left {
     display: flex;
@@ -4029,7 +4041,7 @@ header{
   }
   .roadmap-image {
     display: flex;
-    width: 85%;
+    width: 75%;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -4092,7 +4104,7 @@ header{
   }
   .pointer-div1 {
     width:50%;
-    top: 30%;
+    top: 25%;
     left: -16%;
   }
   .pointer-div2 {
@@ -4106,7 +4118,7 @@ header{
   .pointer-div3 {
     width: 50%;
     left: 24%;
-    top: 29.8%;
+    top: 24.8%;
   }
   .pointer-div4 {
     width: 50%;
@@ -4118,7 +4130,7 @@ header{
   }
   .pointer-div5 {
     width: 50%;
-    top: 30%;
+    top: 25%;
     left: 55%;
   }
   @media screen and (max-width: 1200px) {

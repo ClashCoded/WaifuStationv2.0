@@ -10,6 +10,7 @@ function Roadmap() {
     <div id="roadmap" className="roadmap">
       <h4 className="about_title" >ロードマップ</h4>
       <h1 data-aos="fade-down">RoadMap</h1>
+      <p className="roadmap-p">2022</p>
       <div className="roadmap-image">
         <img
           data-aos-delay="200"
@@ -35,7 +36,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Launch</h4>
             <p>• Waifu Auctions</p>
-            <p>• Spring Drop</p>
+            <p>• Founder drop</p>
           </div>
         </div>
         <div
@@ -55,7 +56,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q2 2022</h4>
             <p>
-              • Summer Drop
+              • Early Adopter Drop
               <br /> • Metaverse storefronts
               <br /> • Prize Lottery
             </p>
@@ -78,7 +79,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q3 2022</h4>
             <p>
-              • Fall Drop
+              • Community Drop
               <br />• Community-owned gachapons
               <br />• Kyoto Animation Donation
             </p>
@@ -101,7 +102,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q4 2022</h4>
             <p>
-              • Winter Drop
+              • Public Drop
               <br /> • User-owned gachapons
               <br /> • Special Event
             </p>

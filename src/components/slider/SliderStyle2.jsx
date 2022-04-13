@@ -7,6 +7,12 @@ import 'swiper/scss/pagination';
 import img1 from '../../assets/images/box-item/item-h5.1.png'
 import img2 from '../../assets/images/box-item/item-h5.2.png'
 import img3 from '../../assets/images/box-item/item-h5.3.png'
+import img4 from '../../assets/images/box-item/item-h5.4.png'
+import img5 from '../../assets/images/box-item/item-h5.5.png'
+import img6 from '../../assets/images/box-item/item-h5.6.png'
+import img7 from '../../assets/images/box-item/item-h5.7.png'
+import img8 from '../../assets/images/box-item/item-h5.8.png'
+import img9 from '../../assets/images/box-item/item-h5.9.png'
 
 const SliderStyle2 = () => {
     const subtitle = 'NFT MARKETPLACE'
@@ -44,11 +50,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2000}
                     >
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img4} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img5} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img4} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img6} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img5} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -84,11 +90,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2200}
                     >
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img7} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img7} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img8} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper

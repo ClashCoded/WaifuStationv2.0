@@ -24,14 +24,14 @@ const MintSlider = () => {
                 <div className="themesflat-container ">
                         <div className="wrap-heading flat-slider flex">
                             <div className="content">
-                                <h2 className="heading mt-15">Discover, find,
+                                <h2 className="heading mt-15" style={{textAlign:"center"}}>Discover, find,
                                 </h2>	
-                                <h1 className="heading mb-style"><span className="tf-text s1">Sell extraordinary</span>                                          
+                                <h1 className="heading mb-style" style={{textAlign:"center"}}><span className="tf-text s1">Sell extraordinary</span>                                          
                                 </h1>
-                                <h1 className="heading">Monster NFTs</h1>
-                                <p className="sub-heading mt-19 mb-40">Marketplace for monster character cllections non fungible token NFTs
+                                <h1 className="heading" style={{textAlign:"center"}}>Monster NFTs</h1>
+                                <p className="sub-heading mt-19 mb-40" style={{textAlign:"center"}}>Marketplace for monster character cllections non fungible token NFTs
                                 </p>
-                                <div className="flat-bt-slider flex style2">
+                                <div className="flat-bt-slider flex style" >
                                     <button to="/explore-01" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
                                     </span></button>
                                 </div>
@@ -40,7 +40,7 @@ const MintSlider = () => {
                                 modules={[ Autoplay ]}
                                 direction={"vertical"}
                                 spaceBetween={25}
-                                slidesPerView={5}
+                                slidesPerView='auto'
                                 loop
                                 autoplay={{
                                     delay: 1,
@@ -60,7 +60,7 @@ const MintSlider = () => {
                                 modules={[ Autoplay ]}
                                 direction={"vertical"}
                                 spaceBetween={25}
-                                slidesPerView={5}
+                                slidesPerView='auto'
                                 loop
                                 autoplay={{
                                     delay: 1,
@@ -80,7 +80,7 @@ const MintSlider = () => {
                                 modules={[ Autoplay ]}
                                 direction={"vertical"}
                                 spaceBetween={25}
-                                slidesPerView={5}
+                                slidesPerView='auto'
                                 loop
                                 autoplay={{
                                     delay: 1,

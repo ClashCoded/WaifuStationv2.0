@@ -83,7 +83,7 @@ const HeaderStyle2 = () => {
                                 <div id="site-logo" className="clearfix">
                                     <div id="site-logo-inner">
                                         <Link to="/" rel="home" className="main-logo">
-                                            <img   id="logo_header" src={logodark} alt="nft-gaming" />
+                                            {/* <img   id="logo_header" src={logodark} alt="nft-gaming" /> */}
                                         </Link>
                                     </div>
                                 </div>

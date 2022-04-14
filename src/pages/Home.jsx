@@ -1,22 +1,22 @@
 import React from 'react';
 import Header from '../components/header/HeaderStyle2';
 import About from '../components/layouts/home/About';
-import Collection from '../components/layouts/home/Collection';
+import Perk from '../components/layouts/home/Perk';
 import Governance from '../components/layouts/home/Governance';
 import Roadmap from '../components/layouts/home/Roadmap';
 import Powered from '../components/layouts/home/Powered';
 import Gang from '../components/layouts/home/Gang';
 import Footer from '../components/footer/Footer';
-import SliderStyle2 from '../components/slider/SliderStyle2';
+import Hero from '../components/layouts/home/Hero';
 import heroSliderData from '../assets/fake-data/data-slider';
 
 const Home = () => {
     return (
         <div className='home-5'>
             <Header />
-            <SliderStyle2 data={heroSliderData} />
+            <Hero data={heroSliderData} />
             <About />
-            <Collection />
+            <Perk />
             <Governance />
             <Roadmap />
             <Powered />

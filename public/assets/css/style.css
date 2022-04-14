@@ -3588,16 +3588,15 @@ header{
   }
   .collect_right {
     width: 15%;
-    transition: 1s all;
   }
-
-  .collect_right:hover {
-      transform: rotateY(360deg);
+  .collect_right:hover > .collect_img {
+    transform: rotateY(360deg);
   }
   .collect_img {
     max-width: 100%;
     object-fit: contain;
     border-radius: 50%;
+    transition: 1s all;
   }
   .hover-p {
     width: 95%;
@@ -4631,17 +4630,17 @@ header{
 }
 .perk_right {
   width: 15%;
-  transition: 1s all;
 }
-.perk_right:hover {
+.perk_right:hover > .perk_img {
   transform: rotateY(360deg);
-
 }
+
 .perk_img {
   max-width: 100%;
   object-fit: contain;
   border-radius: 50%;
- 
+
+ transition: 1s all;
 }
 
 .hover-p {

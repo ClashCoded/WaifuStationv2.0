@@ -1,5 +1,10 @@
 {
-    "3": "https://ropsten.infura.io/v3/",
-    "4": "https://rinkeby.infura.io/v3/",
-    "80001": "https://rpc-mumbai.maticvigil.com/"
+    "ethereum": {
+        "development": "https://rinkeby.infura.io/v3/",
+        "production": "https://mainnet.infura.io/v3/"
+    },
+    "polygon": {
+        "development": "https://rpc-mumbai.maticvigil.com/",
+        "production": "https://rpc-mumbai.maticvigil.com"
+    }
 }

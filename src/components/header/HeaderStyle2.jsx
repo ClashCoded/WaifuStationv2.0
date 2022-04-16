@@ -3,7 +3,7 @@ import { Link , useLocation } from "react-router-dom";
 import { useWeb3React } from '@web3-react/core';
 import { injected } from '../wallet/connector';
 import DarkMode from './DarkMode';
-import logodark from '../../assets/images/logo/logo_dark.png'
+// import logodark from '../../assets/images/logo/logo_dark.png'
 
 
 const HeaderStyle2 = () => {
@@ -32,7 +32,7 @@ const HeaderStyle2 = () => {
         const connectWalletOnPageLoad = async () => {
             if (localStorage?.getItem('isWalletConnected') === 'true') {
                 try {
-                    await active(injected)
+                    await activate(injected)
                     localStorage.setItem('isWalletConnected', true)
                 } catch (ex) {
                     console.log(ex)

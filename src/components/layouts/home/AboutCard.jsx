@@ -37,7 +37,7 @@ const AboutCard = props => {
                                     <div className="meta-info">
                                         <div className="author">
                                             <div className="avatar">
-                                                <img src={item.imgAuthor} alt="axies" />
+                                                <img src={item.imgAuthor} alt="Waifu" />
                                             </div>
                                             <div className="info">
                                                 <span>Owned By</span>

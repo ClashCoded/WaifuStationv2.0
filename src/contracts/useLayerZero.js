@@ -1,5 +1,5 @@
 import abi from "../abi/layerZeroAbi.json";
-import chains from "../utils/chains.json";
+import { useWeb3React } from "@web3-react/core";
 import Web3 from "web3";
 
 const adresses = {
@@ -8,9 +8,12 @@ const adresses = {
   80001: "0xf1a94d48E0E9632F3F388Fc46a4A31587086681f",
 };
 
-const useLayerZero = (chainId) => {
-  const web3 = new Web3(window.ethereum);
+const useLayerZero = () => {
+  const { library, chainId } = useWeb3React();
+  
+  const web3 = new Web3(library);
   const contract = new web3.eth.Contract(abi, adresses[chainId])
+
   return contract
 };
 

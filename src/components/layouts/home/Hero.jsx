@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 import Timer from '../timer/timer';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
@@ -37,8 +38,8 @@ const Hero = () => {
                         </p>
                         <Timer />
                         <div className="flat-bt-slider style2 flex">
-                            <a href="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
-                            </span></a>
+                            <Link to="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
+                            </span></Link>
                             {/* <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
                             </span></a> */}
                         </div>

@@ -108,10 +108,10 @@ const Gachapons = () => {
                                     <div className="card-bottom">
                                         <div className="author">
                                             <div className="content">
-                                                <h5><Link to="/authors-01">{item.title}</Link></h5>
+                                                <h5><Link to="/gachapon">{item.title}</Link></h5>
                                                 <div className="infor">
                                                     <span>Created by</span>
-                                                    <span className="name"><Link to="/author-02">{item.name}</Link></span>
+                                                    <span className="name"><Link to="/gachapon">{item.name}</Link></span>
                                                 </div>
                                             </div>
                                         </div>

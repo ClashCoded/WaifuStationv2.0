@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-import Timer from '../timer/timer';
+import Timer from '../timer/timerXMinting';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';

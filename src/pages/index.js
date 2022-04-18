@@ -39,7 +39,7 @@ import Mint from "./Mint";
 const routes = [
   { path: '/', component: <Home />},
   { path: '/gacha', component: <Gacha/>},
-  { path: '/gacha-details', component: <GachaDetails/>},
+  { path: '/gachapon', component: <GachaDetails/>},
   { path: '/mint', component: <Mint />},
   { path: '/faq', component: <FAQ />},
 ]

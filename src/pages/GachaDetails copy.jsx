@@ -4,7 +4,6 @@ import Footer from '../components/footer/Footer';
 import { Link } from 'react-router-dom';
 import Countdown from "react-countdown";
 import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
-import styled from 'styled-components';
 import 'react-tabs/style/react-tabs.css';
 import liveAuctionData from '../assets/fake-data/data-live-auction';
 import LiveAuction from '../components/layouts/LiveAuction';
@@ -16,10 +15,6 @@ import img5 from '../assets/images/avatar/avt-7.jpg'
 import img6 from '../assets/images/avatar/avt-8.jpg'
 import img7 from '../assets/images/avatar/avt-2.jpg'
 import imgdetail1 from '../assets/images/box-item/images-item-details.jpg'
-
-const GachaponModelContainer = styled.div`
-    margin: 0 auto;
-`
 
 const GachaDetails = props => {
 
@@ -95,21 +90,10 @@ const GachaDetails = props => {
                 <div className="themesflat-container">
                     <div className="row">
                         <div className="col-xl-6 col-md-12">
-                            <div style={{margin: "0 auto", alignItems: 'center'}}>
-                                <GachaponModelContainer>
-                                <model-viewer
-                                    style={{margin: "0 auto"}}
-                                    src="/assets/Gachapon.glb"
-                                    poster="/images/littletokyo.jpg"
-                                    alt="gachapon"
-                                    loading="lazy"
-                                    camera-controls
-                                    disable-zoom
-                                    field-of-view="30deg"
-                                    camera-orbit="120deg"
-                                    auto-rotate
-                                    />
-                                </GachaponModelContainer>
+                            <div className="content-left">
+                                <div className="media">
+                                    <img src={imgdetail1} alt="Waifu" />
+                                </div>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-12">
@@ -254,6 +238,7 @@ const GachaDetails = props => {
                     </div>
                 </div>
             </div>
+            <LiveAuction data={liveAuctionData} />
             <Footer />
         </div>
     );

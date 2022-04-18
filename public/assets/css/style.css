@@ -681,7 +681,7 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
     outline: 0;
-    border: 1px solid var(--primary-color3);
+    border: 2px solid var(--primary-color3);
     color: var(--primary-color3);
     /* background: transparent; */
 }
@@ -1324,6 +1324,7 @@ a:focus {
     --primary-color5: #F8F8F8;
     --primary-color6: #14141F;
     --primary-color7: #F8F8F8;
+    --primary-color10: #FCFCFC;
     --background-color1:#fcfcfc;
     --background-color2: #E3E3E3;
     --bg-section : #fff;
@@ -1339,6 +1340,7 @@ a:focus {
     --primary-color5: #1b1b1b;
     --primary-color6: #ffffff;
     --primary-color7: #343444;
+    --primary-color10: #FD9DCB;
     --background-color1:#272727;
     --background-color2: #1b1b1b;
     --bg-section: #272727;
@@ -1545,12 +1547,15 @@ header{
 }
 .logo-light {
     display: block;
+    width: 85%;
 }
 .is_dark .logo-dark {
     display: block;
+    width: 85%;
 }
 .is_dark .logo-light {
     display: none;
+    width: 85%;
 }
 /* Menu
 -------------------------------------------------------------- */
@@ -2204,7 +2209,7 @@ header{
 }
 .home-5 #footer , 
 .home-3 #footer{
-    background: #fff !important;
+    background: linear-gradient( 227.3deg,#FD9DCB  0%,#fa3f62 100.84%);
 }
 .home-6 #footer {
     background: var(--bg-section) !important;
@@ -3336,7 +3341,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color1) ;
+    background-color: var(--background-color2) ;
     height: auto;
     overflow: visible;
   }
@@ -4881,6 +4886,11 @@ header{
 
 /*------ Timer --------*/
 
+.mint-content-section {
+  position: relative;
+  top: -4rem;
+}
+
 .timer-div {
   font-family: "Jua";
   display: flex;
@@ -4888,12 +4898,10 @@ header{
   align-items: center;
   gap: 60px;
   margin-top: 10rem;
-  background-color: #FD9DCB;
+  background-color: transparent;
+  border: solid 2px var(--primary-color10);
   padding: 20px 30px;
-  border-radius: 20px;
-}
-.is_dark .timer-div {
-  background-color: #272727;
+  border-radius: 30px;
 }
 .time-box {
   display: flex;
@@ -4908,4 +4916,27 @@ header{
 }
 .time-box h2 {
   color: white;
+}
+
+.timer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input[type=number] {
+  background: rgba(0, 0, 0, 0);
+  padding: 15px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-color10);
+  border-radius: 15px;
+  color: #FCFCFC;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
 }

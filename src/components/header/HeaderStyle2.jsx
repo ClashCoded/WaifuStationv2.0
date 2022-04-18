@@ -3,7 +3,7 @@ import { Link , useLocation } from "react-router-dom";
 import { useWeb3React } from '@web3-react/core';
 import { injected } from '../wallet/connector';
 import DarkMode from './DarkMode';
-// import logodark from '../../assets/images/logo/logo_dark.png'
+import logodark from '../../assets/images/logo/logo_dark3.png'
 
 
 const HeaderStyle2 = () => {
@@ -83,7 +83,7 @@ const HeaderStyle2 = () => {
                                 <div id="site-logo" className="clearfix">
                                     <div id="site-logo-inner">
                                         <Link to="/" rel="home" className="main-logo">
-                                            {/* <img   id="logo_header" src={logodark} alt="nft-gaming" /> */}
+                                            <img   id="logo_header" src={logodark} alt="nft-gaming" />
                                         </Link>
                                     </div>
                                 </div>

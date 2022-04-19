@@ -2,7 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
-import Timer from '../timer/timerXMinting';
+import MintBar from '../timer/MintBar';
+import Timer from '../timer/timer';
+import styled from 'styled-components';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
@@ -20,10 +22,16 @@ import img11 from '../../../assets/images/box-item/item-h5.11.png'
 import img12 from '../../../assets/images/box-item/item-h5.12.png'
 import img13 from '../../../assets/images/box-item/item-h5.13.png'
 
+const MintBarContainer = styled.div`
+    margin-top: 4rem;
+    width: 70%;
+`
+
 const Hero = () => {
 
     const subtitle = 'Waifustation'
-    const title = 'Community owned gachapon arcades in the multiverse'
+    const title = 'Community owned gachapon arcades'
+    const title2 = " in the multiverse"
     const description = 'Participate in the founders drop'
     return (
         <section className="flat-title-page home5">
@@ -34,9 +42,14 @@ const Hero = () => {
                         <h4 className="mg-bt-11"><span className="fill">{subtitle}</span></h4>
                         <h1 className="heading">{title}                                                                                      
                         </h1>	
+                        <h1 className="heading">{title2}                                                                                      
+                        </h1>
                         <p className="sub-heading mg-t-7 mg-bt-39">{description}
                         </p>
                         <Timer />
+                        <MintBarContainer>
+                        <MintBar />
+                        </MintBarContainer>
                         <div className="flat-bt-slider style2 flex">
                             <Link to="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
                             </span></Link>

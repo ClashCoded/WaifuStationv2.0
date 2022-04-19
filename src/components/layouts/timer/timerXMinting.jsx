@@ -18,7 +18,6 @@ const Input2 = styled.input`
 `;
 
 const MintingComponent = styled.div`
-  margin-top: 8rem;
   width: 100%;
 `;
 
@@ -100,10 +99,10 @@ const TimerxMint = () => {
         <MintingComponent>
           <InputButton count={mintAmount} setCount={setMintAmout} />
           <div className="flat-bt-slider timer-container">
-            <Input2
+            {/* <Input2
               value={"Minting on " + SUPPORTED_CHAINS[chainId]}
               disabled
-            />
+            /> */}
             <button
               onClick={() => mintNft()}
               className="sc-button header-slider style style-1 rocket fl-button pri-1"

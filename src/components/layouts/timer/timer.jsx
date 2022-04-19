@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+
 const Timer = () => {
   const [showMint, setShowMint] = useState(false);
   const [timerDays, setTimerDays] = useState("00");

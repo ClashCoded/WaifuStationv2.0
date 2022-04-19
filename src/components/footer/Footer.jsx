@@ -9,23 +9,35 @@ const Footer = () => {
     ]
     const navigateList = [
         {
-            title: "Help & Support",
-            link: "/help-center"
+            title: "Home",
+            link: "/"
         },
         {
-            title: "Live Auctions",
-            link: "/live-auctions"
+            title: "Mint",
+            link: "/mint"
         },
         {
-            title: "Item Details",
-            link: "/item-details-01"
+            title: "Gacha",
+            link: "/gacha"
         },
         {
-            title: "Activity",
-            link: "/activity-01"
+            title: "FAQ",
+            link: "/faq"
         },
     ]
-    const companyList = [
+    const daoList = [
+        {
+            title: "About",
+            link: "/"
+        },
+        {
+            title: "Terms of Service",
+            link: "/mint"
+        },
+        {
+            title: "Whitepaper",
+            link: "/gacha"
+        },
     ]
     const socialList = [
         {
@@ -123,10 +135,10 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-5 col-5">
                             <div className="widget widget-menu fl-st-3">
-                                <h5 className="title-widget">Company</h5>
+                                <h5 className="title-widget">DAO</h5>
                                 <ul>
                                     {
-                                        companyList.map((item,index) =>(
+                                        daoList.map((item,index) =>(
                                             <li key={index}><Link to={item.link}>{item.title}</Link></li>
                                         ))
                                     }

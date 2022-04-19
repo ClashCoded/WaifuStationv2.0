@@ -39,7 +39,7 @@ const InputButtonContainer = styled.div`
   flex-direction: row;
   gap: 20px;
   margin-top: 40px;
-  width: 80%;
+  width: 65%;
   margin-right: auto;
   margin-left: auto;
 `;
@@ -47,7 +47,7 @@ const InputButtonContainer = styled.div`
 export default function InputButton(props) {
   const { count, setCount } = props;
 
-  const decrementCount = () => {
+  const decrementCount = () => { 
     if (count > 1) setCount(count - 1);
   };
 

@@ -6,11 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import MintBar from "../timer/MintBar";
 import InputButton from "./InputButton";
 import Web3 from "web3";
 import img1 from "../../../assets/images/box-item/img_item1.png";
 import img2 from "../../../assets/images/box-item/img_item2.png";
 import img3 from "../../../assets/images/box-item/img_item3.png";
+import img4 from "../../../assets/images/box-item/img_item4.png";
+import img5 from "../../../assets/images/box-item/img_item5.png";
+import img6 from "../../../assets/images/box-item/img_item6.png";
+import img7 from "../../../assets/images/box-item/img_item7.png";
+import img8 from "../../../assets/images/box-item/img_item8.png";
 import { useWeb3React } from "@web3-react/core";
 import useLayerZero from "../../../contracts/useLayerZero";
 import styled from "styled-components";
@@ -73,6 +79,9 @@ const MintSlider = () => {
               >
                 Participate in the founders drop!
               </p>
+              <div style={{ marginTop: "8rem", width: "70%", marginLeft:"auto", marginRight:"auto"}}>
+              <MintBar />
+              </div>
               <div style={{ width: "90%", margin: "0 auto" }}>
                 <TimerxMint />
               </div>
@@ -134,19 +143,19 @@ const MintSlider = () => {
               speed={1800}
             >
               <SwiperSlide>
-                <img src={img3} alt="Waifu" />
+                <img src={img6} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img2} alt="Waifu" />
+                <img src={img5} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img3} alt="Waifu" />
+                <img src={img6} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img1} alt="Waifu" />
+                <img src={img4} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img2} alt="Waifu" />
+                <img src={img5} alt="Waifu" />
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -163,16 +172,16 @@ const MintSlider = () => {
               speed={2200}
             >
               <SwiperSlide>
-                <img src={img2} alt="Waifu" />
+                <img src={img8} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={img1} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img3} alt="Waifu" />
+                <img src={img7} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={img2} alt="Waifu" />
+                <img src={img8} alt="Waifu" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={img1} alt="Waifu" />

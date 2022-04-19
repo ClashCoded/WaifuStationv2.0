@@ -79,12 +79,12 @@ const Gachapons = () => {
         ]
     )
 
-    const [visible , setVisible] = useState(3);
+    const [visible , setVisible] = useState(6);
     const showMoreItems = () => {
         setVisible((prevValue) => prevValue + 3);
     }
     return (
-        <section style={{padding: "18vh 0"}} className="tf-section live-auctions style4 home4 live-auctions-style7">
+        <section style={{padding: "10vh 0"}} className="tf-section live-auctions style4 home4 live-auctions-style7">
             <div className="themesflat-container">
                 <div className="row">
                     <div className="col-box-12">

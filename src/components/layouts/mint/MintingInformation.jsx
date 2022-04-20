@@ -132,7 +132,7 @@ const MintingInformation = () => {
                   {dataPanel.map((data) => (
                     <TabPanel key={data.id}>
                       {data.dataContent.slice(0, visible).map((item) => (
-                        <MintingInformationContainer>
+                        <MintingInformationContainer key={data.id}>
                           <MintingHeaderImg src={item.img} alt="HeadlineImg" />
                           <MintingImgTextContainer>
                           <img src={item.leftsideimg} alt="LeftsideImg" />

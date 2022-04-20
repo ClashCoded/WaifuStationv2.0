@@ -109,20 +109,16 @@ const AboutCard = (props) => {
                   </button>
                   <div className="about-card-countdown">
                     <div className="about-time-box">
-                      <h2>{timerDays}</h2>
-                      <h2>D</h2>
+                      <h2>{timerDays}D</h2>
                     </div>
                     <div className="about-time-box">
-                      <h2>{timerHours}</h2>
-                      <h2>H</h2>
+                      <h2>{timerHours}H</h2>
                     </div>
                     <div className="about-time-box">
-                      <h2>{timerMinutes}</h2>
-                      <h2>M</h2>
+                      <h2>{timerMinutes}M</h2>
                     </div>
                     <div className="about-time-box">
-                      <h2>{timerSeconds}</h2>
-                      <h2>S</h2>
+                      <h2>{timerSeconds}S</h2>
                     </div>
                   </div>
                 </div>

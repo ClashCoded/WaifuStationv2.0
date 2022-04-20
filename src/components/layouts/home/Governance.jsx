@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "../../../assets/images/home/Images/iridescent.jpg";
+import govvideo from "../../../assets/images/home/Video/GovernanceVideo.mp4"
 import smallLogo from "../../../assets/images/home/Images/about-logo.png";
 //assets
 function Governance() {
@@ -17,10 +17,6 @@ function Governance() {
             airdrops, alpha, and more. Waifustation NFT owners also receive a
             portion of earnings made by our network of gachapon arcades.
           </p>
-          {/* <div className="btn-div">
-          <button className="hero_buy">Whitepaper</button>
-          <button className="hero_create">计划书</button>
-        </div> */}
         </div>
         <div data-aos="fade-up" className="governance_left">
           <div className="card-mine-gov big_card-mine">
@@ -31,7 +27,7 @@ function Governance() {
               src={smallLogo}
               alt=""
             />
-            <img className="card-mine-img big_img" src={img3} alt="..." />
+            <video className="card-mine-img big_img" style={{marginTop: "2rem", marginBottom: "0"}} src={govvideo} autoPlay muted loop alt="..." />
             <p className="card-mine-title-gov">Waifu</p>
             <div className="card-mine-lower-gov">
               <p className="card-mine-lower-number-gov">#???</p>

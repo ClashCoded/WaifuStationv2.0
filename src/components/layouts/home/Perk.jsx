@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import img from "../../../assets/images/home/Images/fair-launch.png"
 import img2 from "../../../assets/images/home/Images/good-cause.png"
 import img3 from "../../../assets/images/home/Images/win-prizes.png"
@@ -13,6 +13,72 @@ import shape2 from "../../../assets/images/backgroup-secsion/bg-gradient2.png"
 import shape3 from "../../../assets/images/backgroup-secsion/bg-gradient3.png"
 import imgbg from "../../../assets/images/backgroup-secsion/img_bg_page_title.jpg"
 function Perk() {
+
+  // const [dataTab] = useState([
+  //   {
+  //     id: 1,
+  //     title: "Round 1",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Round 2",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Round 3",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Round 4",
+  //   },
+  // ]);
+  // const [dataPanel] = useState([
+  //   {
+  //     id: 1,
+  //     dataContent: [
+  //       {
+  //         id: 1,
+  //         title: "Playable A P2E NFT Fantasy Sports Platform",
+  //         content:
+  //           "The launch includes 3 rounds: Community Presale, Partner Presale, Public Sale. No bonding curve.",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     dataContent: [
+  //       {
+  //         id: 2,
+  //         title: "Playable A P2E NFT Fantasy Sports Platform",
+  //         content:
+  //           " al;skdfjl;kasjdf;laksdfjl;a jasdfljalksdfjl;askdfjalk sdfjkasdhfklasdjfkla jsdflkajsdflaksjhdf ahsdf ksadhgklhdfksdhgkjahdgfklahf alksdhf klashdgjkahsdgklahsdglka hsdgkljhaskdljghlaksdhflkjfhkslahfklasjd hfklasdhflkjashdfkjl asglaskg hlkasjhglkjasdh flkashdflkahsfjkl",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     dataContent: [
+  //       {
+  //         id: 3,
+  //         title: "Playable A P2E NFT Fantasy Sports Platform",
+  //         content:
+  //           " al;skdfjl;kasjdf;laksdfjl;a jasdfljalksdfjl;askdfjalk sdfjkasdhfklasdjfkla jsdflkajsdflaksjhdf ahsdf ksadhgklhdfksdhgkjahdgfklahf alksdhf klashdgjkahsdgklahsdglka hsdgkljhaskdljghlaksdhflkjfhkslahfklasjd hfklasdhflkjashdfkjl asglaskg hlkasjhglkjasdh flkashdflkahsfjkl",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     dataContent: [
+  //       {
+  //         id: 4,
+  //         title: "Playable A P2E NFT Fantasy Sports Platform",
+  //         content:
+  //           " al;skdfjl;kasjdf;laksdfjl;a jasdfljalksdfjl;askdfjalk sdfjkasdhfklasdjfkla jsdflkajsdflaksjhdf ahsdf ksadhgklhdfksdhgkjahdgfklahf alksdhf klashdgjkahsdgklahsdglka hsdgkljhaskdljghlaksdhflkjfhkslahfklasjd hfklasdhflkjashdfkjl asglaskg hlkasjhglkjasdh flkashdflkahsfjkl",
+  //       },
+  //     ],
+  //   },
+  // ]);
+  
   // const clickHandler = (e) => {
   //   const mobile = window.innerWidth;
   //   if (mobile <= 1000) {
@@ -181,8 +247,6 @@ function Perk() {
           <div className="perk_left">
             <h1>Royalties</h1>
             <p className="hover-p">
-              {/* 50% of ETH obtained from all gachapon machines will be
-              continuously airdropped to the NFT owners. */}
               NFT owners are entitled to a portion of gachapon revenue across
               all metaverses.
             </p>

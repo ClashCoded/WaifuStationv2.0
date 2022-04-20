@@ -76,7 +76,7 @@ const AboutCard = (props) => {
                 </div>
                 <div className="card-title">
                   <h5 className="style2">
-                    <Link to="/gacha-details">"{item.title}"</Link>
+                    <Link to="/gacha-details">{item.title}</Link>
                   </h5>
                   <div className="tags">
                     <img src={item.tags} alt="Chain" />

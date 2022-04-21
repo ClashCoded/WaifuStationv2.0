@@ -28,26 +28,49 @@ const StyledButton = styled.button`
     }
 `
 
+const StyledModal = styled(Modal)`
+  top: 20%;
+`
+
+const ImgContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`
+
+const StyledImg = styled.img`
+
+`
+
+const StyledHeading = styled.h1`
+  text-align: center;
+`
+
+const StyledParagraph = styled.p`
+  text-align: center;
+`
+
 const UniqueArtModal = (props) => {
     
 return (
 
-    <Modal
+    <StyledModal
     show={props.show}
     onHide={props.onHide}
   >
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-    <img src={uniqueArt} alt="unique-art" />
-    <h1>Unique Art</h1>
-            <p className="hover-p">
+    <ImgContainer>
+    <StyledImg src={uniqueArt} alt="unique-art" />
+    </ImgContainer>
+    <StyledHeading>Unique Art</StyledHeading>
+            <StyledParagraph className="hover-p">
               Each NFT waifu is a uniquely designed 1 of 1 piece of artwork. No
               two waifus are the same!
-            </p>
+            </StyledParagraph>
             <a href="/documents/WaifustationEN.pdf" target="__blank"><StyledButton>Learn More</StyledButton></a>
     </div>
-    </Modal>
+    </StyledModal>
     
   );
 };

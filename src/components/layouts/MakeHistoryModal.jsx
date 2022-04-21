@@ -28,27 +28,50 @@ const StyledButton = styled.button`
     }
 `
 
+const StyledModal = styled(Modal)`
+  top: 20%;
+`
+
+const ImgContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`
+
+const StyledImg = styled.img`
+
+`
+
+const StyledHeading = styled.h1`
+  text-align: center;
+`
+
+const StyledParagraph = styled.p`
+  text-align: center;
+`
+
 const MakeHistoryModal = (props) => {
     
 return (
 
-    <Modal
+    <StyledModal
     show={props.show}
     onHide={props.onHide}
   >
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-    <img src={makeHistory} alt="make-history" />
-    <h1>Make History</h1>
-            <p className="hover-p">
+    <ImgContainer>
+    <StyledImg src={makeHistory} alt="make-history" />
+    </ImgContainer>
+    <StyledHeading>Make History</StyledHeading>
+            <StyledParagraph className="hover-p">
               All Waifustation NFT owners will forever be engraved in history
               via Waifustation storefronts within metaverses such as Sandbox,
               Decentraland, Matrix World, and more.
-            </p>
+            </StyledParagraph>
             <a href="/documents/WaifustationEN.pdf" target="__blank"><StyledButton>Learn More</StyledButton></a>
     </div>
-    </Modal>
+    </StyledModal>
     
   );
 };

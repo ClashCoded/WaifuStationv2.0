@@ -28,26 +28,49 @@ const StyledButton = styled.button`
     }
 `
 
+const StyledModal = styled(Modal)`
+  top: 20%;
+`
+
+const ImgContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`
+
+const StyledImg = styled.img`
+
+`
+
+const StyledHeading = styled.h1`
+  text-align: center;
+`
+
+const StyledParagraph = styled.p`
+  text-align: center;
+`
+
 const GoodCauseModal = (props) => {
     
 return (
 
-    <Modal
+    <StyledModal
     show={props.show}
     onHide={props.onHide}
   >
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-    <img src={goodCause} alt="good-cause" />
-    <h1>Good Cause</h1>
-            <p className="hover-p">
+    <ImgContainer>
+    <StyledImg src={goodCause} alt="good-cause" />
+    </ImgContainer>
+    <StyledHeading>Good Cause</StyledHeading>
+            <StyledParagraph className="hover-p">
               Upon the completion of our launch, 10 ETH will be donated to Kyoto
               Animation to support creators and commemorate the 2019 tragedy.
-            </p>
+            </StyledParagraph>
             <a href="/documents/WaifustationEN.pdf" target="__blank"><StyledButton>Learn More</StyledButton></a>
     </div>
-    </Modal>
+    </StyledModal>
     
   );
 };

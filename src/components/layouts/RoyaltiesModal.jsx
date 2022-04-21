@@ -28,27 +28,50 @@ const StyledButton = styled.button`
     }
 `
 
+const StyledModal = styled(Modal)`
+  top: 20%;
+`
+
+const ImgContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`
+
+const StyledImg = styled.img`
+
+`
+
+const StyledHeading = styled.h1`
+  text-align: center;
+`
+
+const StyledParagraph = styled.p`
+  text-align: center;
+`
+
 const RoyaltiesModal = (props) => {
     
 return (
-
-    <Modal
+<div style={{top: "50%"}}>
+    <StyledModal
     show={props.show}
     onHide={props.onHide}
   >
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-    <img src={royalties} alt="royalties" />
-    <h1>Royalties</h1>
-            <p className="hover-p">
+    <ImgContainer>
+    <StyledImg src={royalties} alt="royalties" />
+    </ImgContainer>
+    <StyledHeading>Royalties</StyledHeading>
+            <StyledParagraph className="hover-p">
               NFT owners are entitled to a portion of gachapon revenue across
               all metaverses.
-            </p>
+            </StyledParagraph>
             <a href="/documents/WaifustationEN.pdf" target="__blank"><StyledButton>Learn More</StyledButton></a>
     </div>
-    </Modal>
-    
+    </StyledModal>
+    </div>
   );
 };
 

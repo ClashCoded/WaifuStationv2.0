@@ -28,27 +28,50 @@ const StyledButton = styled.button`
     }
 `
 
+const StyledModal = styled(Modal)`
+  top: 20%;
+`
+
+const ImgContainer = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`
+
+const StyledImg = styled.img`
+
+`
+
+const StyledHeading = styled.h1`
+  text-align: center;
+`
+
+const StyledParagraph = styled.p`
+  text-align: center;
+`
+
 const LimitedModal = (props) => {
     
 return (
 
-    <Modal
+    <StyledModal
     show={props.show}
     onHide={props.onHide}
   >
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-    <img src={limited} alt="limited" />
-    <h1>Limited</h1>
-            <p className="hover-p">
+    <ImgContainer>
+    <StyledImg src={limited} alt="limited" />
+    </ImgContainer>
+    <StyledHeading>Limited</StyledHeading>
+            <StyledParagraph className="hover-p">
               Only a total of 8,888 waifus will ever be minted into existence,
               making them super rare. 8 color rarities gives you a chance to
               mint an extra rare one!
-            </p>
+            </StyledParagraph>
             <a href="/documents/WaifustationEN.pdf" target="__blank"><StyledButton>Learn More</StyledButton></a>
     </div>
-    </Modal>
+    </StyledModal>
     
   );
 };

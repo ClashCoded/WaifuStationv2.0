@@ -4331,9 +4331,17 @@ section.today-picks {
     justify-content: center;
     align-items: center;
   }
+
+  .mode_switcher a:hover {
+    opacity: 0.8;
+  }
   
   .is_dark .mode_switcher a {
     background: #272727;
+  }
+
+  .is_dark .mode_switcher a:hover {
+    opacity: 0.8;
   }
   
   .mode_switcher a i {

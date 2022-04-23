@@ -1,9 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
+import getMerkleTree from "../../../utils/merkleTreeHelper";
 import Web3 from "web3";
-import useLayerZero from "../../../contracts/useLayerZero";
+import { usePresaleContract } from "../../../contracts/useContract";
 import { useWeb3React } from "@web3-react/core";
 import InputButton from "../mint/InputButton";
 import styled from "styled-components";
+import keccak256 from "keccak256";
 
 const Input2 = styled.input`
   background: rgba(0, 0, 0, 0);
@@ -21,10 +23,9 @@ const MintingComponent = styled.div`
   width: 100%;
 `;
 
-
 const TimerxMint = () => {
-  const [mintAmount, setMintAmout] = useState(0);
-  const contract = useLayerZero();
+  const [mintAmount, setMintAmout] = useState(1);
+  const contract = usePresaleContract();
   const { account, chainId } = useWeb3React();
   const [showTimer, setShowTimer] = useState(true);
   const [showMint, setShowMint] = useState(false);
@@ -32,6 +33,9 @@ const TimerxMint = () => {
   const [timerHours, setTimerHours] = useState("00");
   const [timerMinutes, setTimerMinutes] = useState("00");
   const [timerSeconds, setTimerSeconds] = useState("00");
+  const [calculatedFees, setCalculatedFees] = useState(0);
+  const [mintCap, setMintCap] = useState(0);
+
   let interval = useRef();
   const startTimer = () => {
     const countdownDate = new Date("Apr 18, 2022 12:00:00").getTime();
@@ -61,15 +65,30 @@ const TimerxMint = () => {
       }
     });
   };
-  useEffect( () => {
+  useEffect(() => {
     startTimer();
     return () => {
       clearInterval(interval.current);
     };
   });
 
-  
-  const MAX_MINT = 3;
+  useEffect(() => {
+    const calculateFee = async() => {
+      const mintFee = await contract.methods.mintFee().call();
+      setCalculatedFees(mintFee*mintAmount/10**18)
+    }
+    calculateFee()
+  }, [contract, mintAmount])
+
+  useEffect(() => {
+    const getMintCap = async() => {
+      const mC = await contract.methods.walletCap().call();
+      setMintCap(mC)
+    }
+    getMintCap()
+  }, [contract])
+
+
   const SUPPORTED_CHAINS = {
     1: "Ethereum",
     3: "Ropsten",
@@ -79,18 +98,25 @@ const TimerxMint = () => {
   };
 
   const mintNft = async () => {
-    if (!SUPPORTED_CHAINS[chainId]) {
-      alert("Selected chain not supported!");
+    if (!contract) {
+      console.error("chain not supported");
       return;
     }
-    if (mintAmount <= 0 || mintAmount > MAX_MINT) {
-      alert(`Please enter mint amount between 1-${MAX_MINT}`);
+    const mintFee = await contract.methods.mintFee().call();
+    const MerkleTree = getMerkleTree();
+    const proof = MerkleTree.getHexProof(keccak256(account));
+
+    if (mintAmount <= 0 || mintAmount > mintCap) {
+      alert(`Please enter mint amount between 1-${mintCap}`);
       return;
     }
 
     await contract.methods
-      .mint(mintAmount)
-      .send({ from: Web3.utils.toChecksumAddress(account) });
+      .mint(mintAmount, proof)
+      .send({
+        from: Web3.utils.toChecksumAddress(account),
+        value: mintAmount * mintFee,
+      });
   };
 
   return (
@@ -108,7 +134,7 @@ const TimerxMint = () => {
               className="sc-button header-slider style style-1 rocket fl-button pri-1"
               style={{ borderRadius: "15px" }}
             >
-              <span>Mint</span>
+              <span>Mint {calculatedFees} Ξ</span>
             </button>
           </div>
         </MintingComponent>

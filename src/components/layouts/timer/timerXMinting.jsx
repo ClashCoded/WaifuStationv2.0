@@ -7,21 +7,13 @@ import InputButton from "../mint/InputButton";
 import styled from "styled-components";
 import keccak256 from "keccak256";
 
-const Input2 = styled.input`
-  background: rgba(0, 0, 0, 0);
-  padding: 15px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  border: 2px solid var(--primary-color10);
-  border-radius: 15px;
-  color: #fcfcfc;
-  text-align: center;
-  margin-right: 20px;
-`;
-
 const MintingComponent = styled.div`
   width: 100%;
 `;
+
+const MintingSpan = styled.span`
+  color: var(--primary-color2)
+`
 
 const TimerxMint = () => {
   const [mintAmount, setMintAmout] = useState(1);
@@ -96,6 +88,7 @@ const TimerxMint = () => {
     137: "Polygon Mainnet",
     80001: "Polygon Testnet",
   };
+  
 
   const mintNft = async () => {
     if (!contract) {
@@ -105,6 +98,7 @@ const TimerxMint = () => {
     const mintFee = await contract.methods.mintFee().call();
     const MerkleTree = getMerkleTree();
     const proof = MerkleTree.getHexProof(keccak256(account));
+
 
     if (mintAmount <= 0 || mintAmount > mintCap) {
       alert(`Please enter mint amount between 1-${mintCap}`);
@@ -132,9 +126,9 @@ const TimerxMint = () => {
             <button
               onClick={() => mintNft()}
               className="sc-button header-slider style style-1 rocket fl-button pri-1"
-              style={{ borderRadius: "15px" }}
+              style={{ borderRadius: "15px", border: "2px solid #FD9DCB"}}
             >
-              <span>Mint {calculatedFees} Ξ</span>
+              <MintingSpan>Mint {calculatedFees} Ξ</MintingSpan>
             </button>
           </div>
         </MintingComponent>

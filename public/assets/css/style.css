@@ -1097,7 +1097,7 @@ label.error { color: red; }
     padding: 0 15px;
 }
 .bg-style{
-    background-color: var(--primary-color5) !important;
+    background-color: #FD9DCB !important;
 }
 .bg-style2{
     background-color: #fff!important;
@@ -2093,8 +2093,7 @@ header{
     width     : 100%;
     box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
     z-index   : 9999;
-    background: linear-gradient(
-        227.3deg, #8A208C 0%, #181B81 100.84%);
+    background-color: #FD9DCB;
     border: none;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
@@ -2201,7 +2200,7 @@ header{
 -------------------------------------------------------------- */
 #footer {
     padding: 80px 0 80px;
-    background: var(--bg-section);
+    background-color: #FD9DCB;
 }
 
 #footer.style-2 {
@@ -2209,7 +2208,7 @@ header{
 }
 .home-5 #footer , 
 .home-3 #footer{
-    background: linear-gradient( 227.3deg,#FD9DCB  0%,#fa3f62 100.84%);
+    background-color: #FD9DCB;
 }
 .home-6 #footer {
     background: var(--bg-section) !important;
@@ -4900,7 +4899,7 @@ header{
   gap: 3.75em;
   margin-top: 8rem;
   background-color: transparent;
-  border: solid 2px var(--primary-color10);
+  border: solid 2px #FD9DCB;
   padding: 20px 30px;
   border-radius: 30px;
 }
@@ -4916,7 +4915,7 @@ header{
   font-size: 1.6rem;
 }
 .time-box h2 {
-  color: white;
+  color: var(--primary-color2);
   font-size: 3vh;
 }
 
@@ -4930,9 +4929,9 @@ input[type=number] {
   padding: 15px;
   font-size: 15px;
   transition: all 0.3s ease;
-  border: 2px solid var(--primary-color10);
+  border: 2px solid #FD9DCB;
   border-radius: 15px;
-  color: #FCFCFC;
+  color: var(--primary-color2);
   text-align: center;
 }
 

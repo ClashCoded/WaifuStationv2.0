@@ -6,7 +6,7 @@ const Input = styled.input`
   padding: 15px;
   font-size: 15px;
   transition: all 0.3s ease;
-  border: 2px solid var(--primary-color10);
+  border: 2px solid var(--primary-color2);
   border-radius: 20px;
   color: #fcfcfc;
   text-align: center;
@@ -14,23 +14,27 @@ const Input = styled.input`
 
 const LeftInputButton = styled.button`
   border-radius: 20px;
-  border: 2px solid #fcfcfc;
-  background-color: var(--primary--color10);
+  border: 2px solid #FD9DCB;
+  background-color: var(--primary--color2);
+  color: var(--primary-color2);
 
   &:hover {
-    border: 2px solid #fcfcfc;
-    background-color: #fcfcfc;
+    border: 2px solid #FD9DCB;
+    background-color: #FD9DCB;
+    color: #FCFCFC;
   }
 `;
 
 const RightInputButton = styled.button`
   border-radius: 20px;
-  border: 2px solid #fcfcfc;
-  background-color: var(--primary--color10);
+  border: 2px solid #FD9DCB;
+  background-color: var(--primary--color2);
+  color: var(--primary-color2);
 
   &:hover {
-    border: 2px solid #fcfcfc;
-    background-color: #fcfcfc;
+    border: 2px solid #FD9DCB;
+    background-color: #FD9DCB;
+    color: #FCFCFC;
   }
 `;
 

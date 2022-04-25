@@ -3384,13 +3384,14 @@ header{
     color: #ffc683;
     font-size: 2rem;
     font-weight: 400;
+    padding-bottom: 2rem;
     text-align: center;
     letter-spacing: 1px;
   }
   .about_title2 {
     font-family: 'YeYeYe';
     font-weight: normal;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     letter-spacing: 2px;
   }
   .about_desc {
@@ -3537,7 +3538,7 @@ header{
     font-family: "YeYeYe";
     font-weight: normal;
     color: var(--primarycolor2);
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -3895,7 +3896,7 @@ header{
     font-family: "YeYeYe";
     font-weight: normal;
     color: var(--primary-color2);
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -4040,7 +4041,7 @@ header{
     font-family: "YeYeYe";
     font-weight: normal;
     color: var(--primary-color2);
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     overflow: visible;
   }
@@ -4358,6 +4359,7 @@ header{
     font-family: "Mochiy Pop P One";
     color: #ffc683;
     font-size: 2rem;
+    padding-bottom: 2rem;
     font-weight: 400;
     padding-top: 7rem;
     letter-spacing: 1px;
@@ -4365,14 +4367,14 @@ header{
   .partners-h1{
     font-family: "YeYeYe";
     font-weight: normal;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     margin-bottom: 5rem;
   }
   .powered-by-title {
     font-family: "YeYeYe";
     font-weight: normal;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
   }
   .power_grid {
@@ -4572,6 +4574,7 @@ header{
   color: #ffc683;
   font-size: 2rem;
   padding-top: 7rem;
+  padding-bottom: 2rem;
   font-weight: 400;
   text-align: center;
 }
@@ -4579,7 +4582,7 @@ header{
   font-family: "YeYeYe";
   font-weight: normal;
   color: var(--primarycolor2);
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.5px;

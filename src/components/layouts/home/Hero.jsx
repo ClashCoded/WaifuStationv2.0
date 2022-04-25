@@ -21,6 +21,13 @@ import img10 from '../../../assets/images/box-item/item-h5.10.png'
 import img11 from '../../../assets/images/box-item/item-h5.11.png'
 import img12 from '../../../assets/images/box-item/item-h5.12.png'
 import img13 from '../../../assets/images/box-item/item-h5.13.png'
+import img14 from "../../../assets/images/box-item/item-h5.14.png"
+import img15 from '../../../assets/images/box-item/item-h5.15.png'
+import img16 from '../../../assets/images/box-item/item-h5.16.png'
+import img17 from "../../../assets/images/box-item/item-h5.17.png"
+import img18 from '../../../assets/images/box-item/item-h5.18.png'
+import img19 from '../../../assets/images/box-item/item-h5.19.png'
+import img20 from "../../../assets/images/box-item/item-h5.20.png"
 
 const MintBarContainer = styled.div`
     margin-top: 4rem;
@@ -114,8 +121,8 @@ const Hero = () => {
                         <SwiperSlide><img src={img11} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img12} alt="Waifus" /></SwiperSlide>
                         <SwiperSlide><img src={img13} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img8} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img9} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img14} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img15} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -132,11 +139,11 @@ const Hero = () => {
                         speed= {2000}
                         className="end"
                     >
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Waifus" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img16} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img17} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img18} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img19} alt="Waifus" /></SwiperSlide>
+                        <SwiperSlide><img src={img20} alt="Waifus" /></SwiperSlide>
 
                     </Swiper>
                    

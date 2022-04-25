@@ -1855,7 +1855,7 @@
 }
 
 .flat-bt-slider .sc-button.style span::before {
-    color             : #fff;
+    color             : var(--primary-color2);
     top               : -2px;
     font-size         : 26px;
     -webkit-transition: all 0.3s ease;
@@ -6632,12 +6632,9 @@ button.accordion-button {
 }
 
 .home-7 .tf-section {
-    background: #f8f8f8;
+    background: var(--background-color2);
 }
 
-.is_dark .home-7 .tf-section {
-    background: #14141F;
-}
 
 .flat-title-page.style3{
     padding: 105px 0 0;

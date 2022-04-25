@@ -54,7 +54,7 @@ const AboutCard = (props) => {
             <div key={index}>
               <div
                 className="sc-card-product"
-                style={{ backgroundColor: "var(--primary-color5)" }}
+                style={{ backgroundColor: "var(--primary-color)" }}
               >
                 <div className="card-media">
                   <model-viewer

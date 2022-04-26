@@ -69,14 +69,14 @@ const AboutCard = (props) => {
                     camera-orbit="120deg"
                     auto-rotate
                   />
-                  <Link to="/login" className="wishlist-button heart">
+                  <Link to="/" className="wishlist-button heart">
                     <span className="number-like">{item.wishlist}</span>
                   </Link>
                   <div className="coming-soon">{item.feature}</div>
                 </div>
                 <div className="card-title">
                   <h5 className="style2">
-                    <Link to="/gacha-details">{item.title}</Link>
+                    <Link to="/">{item.title}</Link>
                   </h5>
                   <div className="tags">
                     <img src={item.tags} alt="Chain" />
@@ -91,7 +91,7 @@ const AboutCard = (props) => {
                       <span>Owned By</span>
                       <h6>
                         {" "}
-                        <Link to="/authors-02">{item.nameAuthor}</Link>{" "}
+                        <Link to="/">{item.nameAuthor}</Link>{" "}
                       </h6>
                     </div>
                   </div>
@@ -102,8 +102,9 @@ const AboutCard = (props) => {
                 </div>
                 <div className="card-bottom">
                   <button
+                    disabled
                     className="sc-button style bag fl-button pri-3 no-bg"
-                    onClick={() => setModalShow(true)}
+                    onClick={() => setModalShow(false)}
                   >
                     <span>Gacha</span>
                   </button>

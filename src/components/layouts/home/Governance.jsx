@@ -27,7 +27,7 @@ function Governance() {
               src={smallLogo}
               alt=""
             />
-            <img className="card-mine-img big_img" style={{marginTop: "2rem", marginBottom: "0"}} src={iridescent} alt="..." />
+            <img className="card-mine-img big_img" style={{marginTop: "0.5rem", marginBottom: "0"}} src={iridescent} alt="..." />
             <p className="card-mine-title-gov">Waifu</p>
             <div className="card-mine-lower-gov">
               <p className="card-mine-lower-number-gov">#???</p>

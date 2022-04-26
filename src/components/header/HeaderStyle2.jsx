@@ -117,8 +117,11 @@ const HeaderStyle2 = () => {
                                     <li className="menu-item">
                                         <Link to="/mint" rel="mint">Mint</Link>
                                     </li>
-                                    <li className="menu-item">
+                                    {/* <li className="menu-item">
                                         <Link to="/gacha" rel="gacha">Gacha</Link>
+                                    </li> */}
+                                    <li className="menu-item">
+                                        <Link to="/" rel="gacha">Gacha</Link>
                                     </li>
                                     <li className="menu-item">
                                         <Link to="/faq" rel="faq">FAQ</Link>

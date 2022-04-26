@@ -1,14 +1,14 @@
-import React from "react"
-import bg from "../../../assets/images/home/Images/roadmap-bg.jpg"
-import launch from "../../../assets/images/home/Images/launch2.png"
-import q4 from "../../../assets/images/home/Images/q4.png"
-import q2 from "../../../assets/images/home/Images/q2.png"
-import q3 from "../../../assets/images/home/Images/q3.png"
-import beyond from "../../../assets/images/home/Images/beyond.png"
+import React from "react";
+import bg from "../../../assets/images/home/Images/roadmap-bg.jpg";
+import launch from "../../../assets/images/home/Images/launch2.png";
+import q4 from "../../../assets/images/home/Images/q4.png";
+import q2 from "../../../assets/images/home/Images/q2.png";
+import q3 from "../../../assets/images/home/Images/q3.png";
+import beyond from "../../../assets/images/home/Images/beyond.png";
 function Roadmap() {
   return (
     <div id="roadmap" className="roadmap">
-      <h4 className="about_title" >ロードマップ</h4>
+      <h4 className="about_title">ロードマップ</h4>
       <h1 data-aos="fade-down">RoadMap</h1>
       <p className="roadmap-p">2022</p>
       <div className="roadmap-image">
@@ -56,7 +56,6 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q2 2022</h4>
             <p>
-              • Early Adopter Drop
               <br /> • Metaverse storefronts
               <br /> • Prize Lottery
             </p>
@@ -79,7 +78,6 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q3 2022</h4>
             <p>
-              • Community Drop
               <br />• Community-owned gachapons
               <br />• Kyoto Animation Donation
             </p>
@@ -102,8 +100,8 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q4 2022</h4>
             <p>
-              • Public Drop
-              <br /> • User-owned gachapons
+              <br />
+              • Multi-chain
               <br /> • Special Event
             </p>
           </div>
@@ -128,16 +126,13 @@ function Roadmap() {
               • 2023 Roadmap
               <br />
               • Waifustation DAO
-              <br />
-              • Multi-chain
-              <br />
-              • Multiverse Expansion
+              <br />• Multiverse Expansion
             </p>
           </div>
         </div>
       </div>
- </div>
-  )
+    </div>
+  );
 }
 
-export default Roadmap
+export default Roadmap;

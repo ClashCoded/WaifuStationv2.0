@@ -38,19 +38,19 @@ const MintingInformation = () => {
   const [dataTab] = useState([
     {
       id: 1,
-      title: "Round 1",
+      title: "Founder",
     },
     {
       id: 2,
-      title: "Round 2",
+      title: "Early Adopter",
     },
     {
       id: 3,
-      title: "Round 3",
+      title: "Community",
     },
     {
       id: 4,
-      title: "Round 4",
+      title: "Public",
     },
   ]);
   const [dataPanel] = useState([

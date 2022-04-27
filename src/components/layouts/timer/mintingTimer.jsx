@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-const Timer = () => {
+const MintingTimer = () => {
   const [showMint, setShowMint] = useState(false);
   const [timerDays, setTimerDays] = useState("00");
   const [timerHours, setTimerHours] = useState("00");
@@ -42,7 +42,7 @@ const Timer = () => {
   });
 
   return (
-        <div className="timer-div">
+        <div className="timer-div" style={{margin: "8rem auto 0"}}>
           <div className="time-box">
             <h2>Days</h2>
             <h2>{timerDays}</h2>
@@ -63,4 +63,4 @@ const Timer = () => {
   );
 };
 
-export default Timer;
+export default MintingTimer;

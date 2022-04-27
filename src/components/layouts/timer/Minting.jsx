@@ -15,54 +15,12 @@ const MintingSpan = styled.span`
   color: var(--primary-color2)
 `
 
-const TimerxMint = () => {
+const Minting = () => {
   const [mintAmount, setMintAmout] = useState(1);
   const contract = usePresaleContract();
   const { account, chainId } = useWeb3React();
-  const [showTimer, setShowTimer] = useState(true);
-  const [showMint, setShowMint] = useState(false);
-  const [timerDays, setTimerDays] = useState("00");
-  const [timerHours, setTimerHours] = useState("00");
-  const [timerMinutes, setTimerMinutes] = useState("00");
-  const [timerSeconds, setTimerSeconds] = useState("00");
   const [calculatedFees, setCalculatedFees] = useState(0);
   const [mintCap, setMintCap] = useState(0);
-
-  let interval = useRef();
-  const startTimer = () => {
-    const countdownDate = new Date("May 20, 2022 10:00:00").getTime();
-    interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      if (distance <= 0) {
-        // stop our timer
-        // setShowTimer(false)
-        // clearInterval(interval.current)
-        // setShowMint(true)
-        setShowTimer(false);
-        clearInterval(interval.current);
-        setShowMint(true);
-      } else {
-        // update timer
-        setTimerDays(days);
-        setTimerHours(hours);
-        setTimerMinutes(minutes);
-        setTimerSeconds(seconds);
-      }
-    });
-  };
-  useEffect(() => {
-    startTimer();
-    return () => {
-      clearInterval(interval.current);
-    };
-  });
 
   useEffect(() => {
     const calculateFee = async() => {
@@ -115,7 +73,6 @@ const TimerxMint = () => {
 
   return (
     <div>
-      {!showTimer ? (
         <MintingComponent>
           <InputButton count={mintAmount} setCount={setMintAmout} />
           <div className="flat-bt-slider timer-container">
@@ -125,35 +82,15 @@ const TimerxMint = () => {
             /> */}
             <button
               onClick={() => mintNft()}
-              className="sc-button header-slider style style-1 rocket fl-button pri-1"
-              style={{ borderRadius: "15px", border: "2px solid #FD9DCB"}}
+              className="minting-button sc-button header-slider style style-1 rocket fl-button pri-1"
+              style={{border: "2px solid #FD9DCB"}}
             >
               <MintingSpan>Mint {calculatedFees} Ξ</MintingSpan>
             </button>
           </div>
         </MintingComponent>
-      ) : (
-        <div className="timer-div">
-          <div className="time-box">
-            <h2>Days</h2>
-            <h2>{timerDays}</h2>
-          </div>
-          <div className="time-box">
-            <h2>Hours</h2>
-            <h2>{timerHours}</h2>
-          </div>
-          <div className="time-box">
-            <h2>Minutes</h2>
-            <h2>{timerMinutes}</h2>
-          </div>
-          <div className="time-box">
-            <h2>Seconds</h2>
-            <h2>{timerSeconds}</h2>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
 
-export default TimerxMint;
+export default Minting;

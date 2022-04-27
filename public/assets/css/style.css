@@ -4965,3 +4965,15 @@ input[type=number]::-webkit-outer-spin-button {
 .about-time-box h2{
   font-size: 1.7rem;
 }
+
+/*----------WaifuLogo---------*/
+.solidLogo {
+  position: absolute;
+  left: 1%;
+  z-index: 1;
+
+}
+
+.solidLogo:hover {
+  opacity: 0;
+}

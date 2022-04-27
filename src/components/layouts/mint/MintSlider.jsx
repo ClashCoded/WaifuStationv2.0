@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper";
-import TimerxMint from "../timer/timerXMinting";
+import Minting from "../timer/Minting";
+import MintingTimer from "../timer/mintingTimer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import MintBar from "../timer/MintBar";
-import InputButton from "./InputButton";
-import Web3 from "web3";
 import img1 from "../../../assets/images/box-item/img_item1.png";
 import img2 from "../../../assets/images/box-item/img_item2.png";
 import img3 from "../../../assets/images/box-item/img_item3.png";
@@ -17,9 +16,7 @@ import img5 from "../../../assets/images/box-item/img_item5.png";
 import img6 from "../../../assets/images/box-item/img_item6.png";
 import img7 from "../../../assets/images/box-item/img_item7.png";
 import img8 from "../../../assets/images/box-item/img_item8.png";
-import { useWeb3React } from "@web3-react/core";
-import useLayerZero from "../../../contracts/useLayerZero";
-import styled from "styled-components";
+
 
 const MintSlider = () => {
 
@@ -42,11 +39,12 @@ const MintSlider = () => {
               >
                 Participate in the founders drop!
               </p>
-              <div style={{ marginTop: "8rem", width: "70%", marginLeft:"auto", marginRight:"auto"}}>
+                <MintingTimer />
+              <div style={{ marginTop: "3rem", width: "70%", marginLeft:"auto", marginRight:"auto"}}>
               <MintBar />
               </div>
-              <div style={{ width: "90%", margin: "0 auto" }}>
-                <TimerxMint />
+              <div style={{ width: "90%", margin: "0 auto 0" }}>
+                <Minting />
               </div>
             </div>
             <Swiper

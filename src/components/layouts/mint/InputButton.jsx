@@ -22,6 +22,7 @@ const LeftInputButton = styled.button`
     border: 2px solid #FD9DCB;
     background-color: #FD9DCB;
     color: #FCFCFC;
+    transform: scale(1.1);
   }
 `;
 
@@ -35,6 +36,7 @@ const RightInputButton = styled.button`
     border: 2px solid #FD9DCB;
     background-color: #FD9DCB;
     color: #FCFCFC;
+    transform: scale(1.1);
   }
 `;
 
@@ -42,7 +44,6 @@ const InputButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-top: 40px;
   width: 65%;
   margin-right: auto;
   margin-left: auto;

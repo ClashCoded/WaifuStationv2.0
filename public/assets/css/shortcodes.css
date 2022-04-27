@@ -239,6 +239,41 @@
     background-color: #fcfcfc;
 }
 
+.minting-button {
+    border-radius: 15px;
+}
+.minting-button::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        filter: blur(20px);
+        opacity: 0.1;
+        background: linear-gradient(
+          to left,
+          #ff5770,
+          #e4428d,
+          #c42da8,
+          #9e16c3,
+          #6501de,
+          #9e16c3,
+          #c42da8,
+          #e4428d,
+          #ff5770
+        );
+        background-size: 200% 200%;
+        animation: animateGlow 1.25s linear infinite;
+}
+.minting-button:hover {
+    transform: scale(1.1);
+}
+
+
 .sc-button.fl-button:hover span,
 .sc-button.fl-button.active span {
     color:#fcfcfc;

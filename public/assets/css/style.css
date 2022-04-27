@@ -1359,6 +1359,11 @@ header{
     padding-right: 0 !important;
 }
 
+.gacha-comingsoon{
+  position: absolute;
+  left: 12.5rem;
+}
+
 .header_1 {
     position: absolute;
     z-index: 100;

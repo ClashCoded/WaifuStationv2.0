@@ -121,6 +121,7 @@ const HeaderStyle2 = () => {
                                     {/* <li className="menu-item">
                                         <Link to="/gacha" rel="gacha">Gacha</Link>
                                     </li> */}
+                                    <p className="gacha-comingsoon">Coming Soon</p>
                                     <li className="menu-item">
                                         <Link to="/" rel="gacha">Gacha</Link>
                                     </li>

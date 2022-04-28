@@ -2718,7 +2718,12 @@ section.today-picks {
 
 .shape{
     background: linear-gradient(
-    216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
+    216.56deg,transparent 5.32%,#fcf 94.32%);
+}
+
+.is_dark .shape {
+    background: linear-gradient(
+    216.56deg, #E250E5 5.32%,#4B50E6 94.32%);
 }
 
 .is_dark .shape.style2::before {

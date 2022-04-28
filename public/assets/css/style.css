@@ -4594,6 +4594,7 @@ header{
 }
 .perk_p {
   font-size: 1.9rem;
+  color: #fcfcfc;
   margin: 0 auto;
   line-height: 1.4;
   width: 40%;
@@ -4636,6 +4637,7 @@ header{
 .perk_left p {
   font-size: 1.6rem;
   font-family: "Jua";
+  color: #fcfcfc;
   line-height: 1.5;
   opacity: 1;
   transition: all 0.45s ease-in-out;

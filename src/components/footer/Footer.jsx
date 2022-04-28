@@ -36,7 +36,7 @@ const Footer = () => {
         },
         {
             title: "Whitepaper",
-            link: "/gacha"
+            link: "/"
         },
     ]
     const socialList = [

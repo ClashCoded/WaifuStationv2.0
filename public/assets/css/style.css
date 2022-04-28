@@ -1099,6 +1099,9 @@ label.error { color: red; }
 .bg-style{
     background-color: #FD9DCB !important;
 }
+.is_dark .bg-style {
+  background-color: #1b1b1b !important;
+}
 .bg-style2{
     background-color: #fcfcfc!important;
 }
@@ -1256,7 +1259,7 @@ a {
 
 a:hover,
 a:focus {
-    color             : var(--primary-color3);
+    color             : #FCFCFC;
     text-decoration   : none;
     outline           : 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1264,6 +1267,10 @@ a:focus {
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
     transition        : all 0.3s ease-in-out;
+}
+
+.is_dark a:hover, a:focus {
+  color: var(--primary-color3)
 }
 
 .hover-ecfect,
@@ -1361,7 +1368,8 @@ header{
 
 .gacha-comingsoon{
   position: absolute;
-  left: 12.5rem;
+  font-size: 1.4rem;
+  left: 13.5rem;
 }
 
 .header_1 {
@@ -2373,13 +2381,13 @@ header{
 }
 
 .is_dark .widget-social.style-1 a {
-    background-color: #343444;
+    background-color: #272727;
     color: #fcfcfc;
 }
 
 .widget-social.style-1 a:hover {
     color: var(--primary-color);
-    background-color: var(--primary-color3);
+    background-color: #272727;
 }
 
 .is_dark .widget-social.style-1 a:hover {
@@ -4983,4 +4991,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .solidLogo:hover {
   opacity: 0;
+}
+
+.faq-discord {
+  text-decoration: underline;
+  color: #1b1b1b;
+}
+
+.faq-discord:hover {
+  color: #FD9DCB;
+}
+
+.is_dark .faq-discord {
+  color: #FCFCFC;
 }

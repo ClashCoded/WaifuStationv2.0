@@ -56,7 +56,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q2 2022</h4>
             <p>
-              <br /> • Metaverse storefronts
+              • Metaverse storefronts
               <br /> • Prize Lottery
             </p>
           </div>
@@ -78,7 +78,7 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q3 2022</h4>
             <p>
-              <br />• Community-owned gachapons
+              • Community-owned gachapons
               <br />• Kyoto Animation Donation
             </p>
           </div>
@@ -100,7 +100,6 @@ function Roadmap() {
           <div className="right-pointer">
             <h4 className="roadmap-title">Q4 2022</h4>
             <p>
-              <br />
               • Multi-chain
               <br /> • Special Event
             </p>

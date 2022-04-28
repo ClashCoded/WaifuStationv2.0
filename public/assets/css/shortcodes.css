@@ -274,6 +274,11 @@
 }
 .minting-button:hover {
     transform: scale(1.1);
+    text-shadow: 0 0 10px #FD9DCB,
+                 0 0 20px #FD9DCB,
+                 0 0 40px #FD9DCB,
+                 0 0 80px #FD9DCB,
+                 0 0 120px #FD9DCB;
 }
 
 
@@ -5812,6 +5817,17 @@ button.accordion-button {
     justify-content: left;
 }
 
+.home-mint-button {
+    justify-content: left;
+}
+
+@media screen and (max-width: 767px) {
+    .flat-bt-slider.style2 {
+        justify-content: center;
+    }
+  
+  }
+
 .is_dark .flat-title-page.home5 .flat-slider .fill {
     background: linear-gradient(
 178.56deg, #FD9DCB 5.32%, #272727 94.32%);
@@ -6668,7 +6684,7 @@ button.accordion-button {
 /* Home 7 Update
 -------------------------------------------------------------- */
 .home-7 .bg-style{
-    background: #fcfcfc !important;
+    background: #FD9DCB !important;
 }
 
 .is_dark .home-7 .bg-style{

@@ -17,12 +17,18 @@ const LeftInputButton = styled.button`
   border: 2px solid #FD9DCB;
   background-color: var(--primary--color2);
   color: var(--primary-color2);
+  font-size: 2rem;
 
   &:hover {
     border: 2px solid #FD9DCB;
     background-color: #FD9DCB;
     color: #FCFCFC;
     transform: scale(1.1);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff;
   }
 `;
 
@@ -31,12 +37,18 @@ const RightInputButton = styled.button`
   border: 2px solid #FD9DCB;
   background-color: var(--primary--color2);
   color: var(--primary-color2);
+  font-size: 2rem;
 
   &:hover {
     border: 2px solid #FD9DCB;
     background-color: #FD9DCB;
     color: #FCFCFC;
     transform: scale(1.1);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff;
   }
 `;
 
@@ -47,6 +59,11 @@ const InputButtonContainer = styled.div`
   width: 65%;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 1150px) {
+    width: 85%;
+
+  }
 `;
 
 export default function InputButton(props) {

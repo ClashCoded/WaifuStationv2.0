@@ -76,7 +76,7 @@ const AboutCard = (props) => {
                 </div>
                 <div className="card-title">
                   <h5 className="style2">
-                    <Link to="/">{item.title}</Link>
+                    <Link style={{color: "var(--primary-color1)"}}to="/">{item.title}</Link>
                   </h5>
                   <div className="tags">
                     <img src={item.tags} alt="Chain" />
@@ -91,7 +91,7 @@ const AboutCard = (props) => {
                       <span>Owned By</span>
                       <h6>
                         {" "}
-                        <Link to="/">{item.nameAuthor}</Link>{" "}
+                        <Link style={{color: "var(--primary-color1)"}} to="/">{item.nameAuthor}</Link>{" "}
                       </h6>
                     </div>
                   </div>

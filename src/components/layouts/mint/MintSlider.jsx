@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper";
+import styled from "styled-components";
 import Minting from "../timer/Minting";
 import MintingTimer from "../timer/mintingTimer";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +17,16 @@ import img5 from "../../../assets/images/box-item/img_item5.png";
 import img6 from "../../../assets/images/box-item/img_item6.png";
 import img7 from "../../../assets/images/box-item/img_item7.png";
 import img8 from "../../../assets/images/box-item/img_item8.png";
+
+const StyledMintBarDiv = styled.div`
+  margin: 3rem auto 0;
+  width: 70%;
+
+  @media screen and (max-width: 1300px) {
+    width: 80%;
+
+  }
+`
 
 
 const MintSlider = () => {
@@ -40,9 +51,9 @@ const MintSlider = () => {
                 Participate in the founders drop!
               </p>
                 <MintingTimer />
-              <div style={{ marginTop: "3rem", width: "70%", marginLeft:"auto", marginRight:"auto"}}>
+              <StyledMintBarDiv >
               <MintBar />
-              </div>
+              </StyledMintBarDiv>
               <div style={{ width: "90%", margin: "0 auto 0" }}>
                 <Minting />
               </div>

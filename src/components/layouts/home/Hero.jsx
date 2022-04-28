@@ -32,6 +32,16 @@ import img20 from "../../../assets/images/box-item/item-h5.20.png"
 const MintBarContainer = styled.div`
     margin-top: 4rem;
     width: 70%;
+
+    @media screen and (max-width: 1300px) {
+    width: 90%;
+
+}
+@media screen and (max-width: 767px) {
+    margin: 4rem auto 0;
+
+
+}
 `
 
 const Hero = () => {
@@ -57,7 +67,7 @@ const Hero = () => {
                         <MintBarContainer>
                         <MintBar />
                         </MintBarContainer>
-                        <div className="flat-bt-slider style2 flex" style={{position: "relative", bottom: "4rem"}}>
+                        <div className="flat-bt-slider style2 flex home-mint-button" style={{position: "relative", bottom: "4rem"}}>
                             <Link to="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
                             </span></Link>
                             {/* <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore

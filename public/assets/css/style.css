@@ -4635,7 +4635,14 @@ header{
   justify-content: center;
   align-items: flex-start;
   width: 60%;
+  border-radius: 25px;
+  padding: 10px;
+  background: linear-gradient(    216.56deg,transparent 5.32%,#fcf 94.32%);
   transition: all 0.45s ease-in-out;
+}
+.is_dark .perk_left {
+  background: linear-gradient(
+    216.56deg, #E250E5 5.32%,#4B50E6 94.32%);
 }
 .perk_left h1 {
   font-family: "Jua";
@@ -4671,16 +4678,19 @@ header{
 .perk_number1 {
   top: 15%;
   left: 11%;
+  gap: 20px;
   animation: move3 10s infinite linear;
 }
 .perk_number2 {
   left: 7%;
   top: 42%;
+  gap: 20px;
   animation: move3 10s infinite linear;
 }
 .perk_number3 {
   left: 11%;
   top: 71%;
+  gap: 20px;
   animation: move3 10s infinite linear;
 }
 .perk_number1 .perk_left, .perk_number2 .perk_left, .perk_number3 .perk_left, .perk_number4 .perk_left, .perk_number5 .perk_left, .perk_number6 .perk_left, .perk_number7 .perk_left, .perk_number8 .perk_left {
@@ -4958,6 +4968,21 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; 
+}
+
+@media screen and (max-width: 1300px) {
+  .timer-div {
+    width: 90%;
+   gap: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .timer-div {
+    margin: 8rem auto 0;
+  }
+
 }
 
 /*------ About Card Timer --------*/

@@ -3563,6 +3563,7 @@ header{
     width: 40%;
     text-align: center;
     font-family: "Jua";
+    color: #FCFCFC;
   }
   .collection_grid {
     width: 100%;
@@ -3602,6 +3603,7 @@ header{
     font-family: "Jua";
     line-height: 1.5;
     opacity: 1;
+    color: #FCFCFC;
     transition: all 0.45s ease-in-out;
   }
   .collect_right {
@@ -3621,16 +3623,16 @@ header{
   }
   .number1 {
     top: 15%;
-    left: 11%;
+    left: 20%;
     animation: move3 10s infinite linear;
   }
   .number2 {
-    left: 7%;
+    left: 15%;
     top: 42%;
     animation: move3 10s infinite linear;
   }
   .number3 {
-    left: 11%;
+    left: 20%;
     top: 71%;
     animation: move3 10s infinite linear;
   }
@@ -3658,19 +3660,19 @@ header{
     opacity: 1;
   } */
   .number4 {
-    right: 11%;
+    right: 20%;
     top: 15%;
     gap: 20px;
     animation: move4 10s infinite linear;
   }
   .number5 {
-    right: 7%;
+    right: 15%;
     top: 42%;
     gap: 20px;
     animation: move4 10s infinite linear;
   }
   .number6 {
-    right: 11%;
+    right: 20%;
     top: 71%;
     gap: 20px;
     animation: move4 10s infinite linear;
@@ -3696,7 +3698,7 @@ header{
     flex-direction: column;
     align-items: center;
     left: 41.5%;
-    top: 54%;
+    top: 69%;
     gap: 20px;
     text-align: center;
     width: 17%;
@@ -4155,16 +4157,30 @@ header{
     top: 25%;
     left: 55%;
   }
-  @media screen and (max-width: 1200px) {
+
+  @media screen and (max-width: 1600px) {
 
     .roadmap-bg {
       transform: translate(90deg);
     }
     .right-pointer h4 {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
     .right-pointer p {
-      font-size: 0.9rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .roadmap-image {
+      width: 90%;
+    }
+
+    .right-pointer h4 {
+      font-size: 1.5rem;
+    }
+    .right-pointer p {
+      font-size: 1.2rem;
     }
     .pointer-div1 {
       top: 25%;
@@ -4184,66 +4200,61 @@ header{
     }
     .pointer-div5 {
       top: 25%;
-      left: 57%;
+      left: 54%;
     }
   }
+
+  @media screen and (max-width: 860px) {
+    .roadmap-image {
+      width: 95%;
+    }
+    .right-pointer p {
+      font-size: 1rem;
+    }
+    .pointer-div1 {
+      top: 21%;
+      left: -17%;
+    }
+    .pointer-div2 {
+      left: 3%;
+      top: 57%;
+    }
+    .pointer-div3 {
+      left: 23%;
+      top: 21%;
+    }
+    .pointer-div4 {
+      left: 40%;
+      top: 57%;
+    }
+    .pointer-div5 {
+      top: 21%;
+      left: 54%;
+    }
+  }
+
   @media screen and (max-width: 632px) {
     .right-pointer h4 {
       font-size: 1.2rem;
     }
     .right-pointer p {
-      font-size: 0.9rem;
-    }
-    .pointer-div {
-      width: 65%;
-    }
-    .left-pointer {
-      width: 30%;
-    }
-    .left-pointer2 {
-      width: 30%;
-      flex-direction: row-reverse;
+      font-size: 1rem;
     }
     .pointer-div1 {
-      top: 3%;
-      left: 20%;
+    
     }
     .pointer-div2 {
-      top: 19%;
-      left: 28%;
+     
     }
-    .pointer-div2 .right-pointer {
-      order: 2;
-    }
+
     .pointer-div3 {
-      left: 14%;
-      top: 38%;
+     
     }
     .pointer-div4 {
-      top: 61%;
-      left: 28%;
-    }
-    .pointer-div4 .right-pointer {
-      order: 2;
+     
     }
     .pointer-div5 {
-      top: 81%;
-      left: 10%;
-    }
-    .pointer-div1 .left-pointer2 {
-      order: 2;
-    }
-    .pointer-div2 .left-pointer {
-      order: 1;
-    }
-    .pointer-div3 .left-pointer2 {
-      order: 2;
-    }
-    .pointer-div4 .left-pointer {
-      order: 1;
-    }
-    .pointer-div5 .left-pointer2 {
-      order: 2;
+      
     }
   }
   @media screen and (max-width: 478px) {

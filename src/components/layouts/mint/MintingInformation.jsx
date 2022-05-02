@@ -21,6 +21,20 @@ const MintingImgTextContainer = styled.div`
   align-items: center;
   padding: 7rem 0;
   gap: 6rem;
+
+  @media screen and (max-width: 860px) {
+    flex-direction: column;
+
+  }
+`
+
+const TextContainerStyled = styled.div`
+
+@media screen and (max-width: 860px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 `
 
 const StyledTabList = styled(TabList)`
@@ -136,10 +150,10 @@ const MintingInformation = () => {
                           <MintingHeaderImg src={item.img} alt="HeadlineImg" />
                           <MintingImgTextContainer>
                           <img src={item.leftsideimg} alt="LeftsideImg" />
-                          <div>
+                          <TextContainerStyled>
                           <h2>{item.title}</h2>
                           <p>{item.content}</p>
-                          </div>
+                          </TextContainerStyled>
                           </MintingImgTextContainer>
                           <MintingHeaderImg src={item.bottomsideimg} alt="BottomImg" />
                         </MintingInformationContainer>

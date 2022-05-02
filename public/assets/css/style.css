@@ -1372,6 +1372,17 @@ header{
   left: 13.5rem;
 }
 
+@media screen and (max-width: 991px) {
+.gacha-comingsoon {
+  left: 21rem;
+  top: 8.3%;
+  z-index: 1;
+}
+.header_2 #main-nav>ul>li:hover {
+  transform: scale(1);
+}
+}
+
 .header_1 {
     position: absolute;
     z-index: 100;
@@ -1803,8 +1814,8 @@ header{
     }
     
     .is_dark .main-nav.active ul>li.current-menu-item>a{
-    background: linear-gradient(
-    216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
+      background: linear-gradient(
+        216.56deg,#FCFCFC 5.32%,#FD9DCB 94.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -1817,7 +1828,7 @@ header{
     .is_dark .main-nav.active .current-item>a,
     .is_dark .main-nav.active ul>li>a:hover {
     background: linear-gradient(
-    216.56deg,#E250E5 5.32%,#4B50E6 94.32%);
+    216.56deg,#FCFCFC 5.32%,#FD9DCB 94.32%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -3508,7 +3519,7 @@ header{
 
     }
     .about_title2 {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
     .about_desc {
       width: 85%;
@@ -3841,13 +3852,13 @@ header{
       margin-top: 2rem;
     }
   }
-  @media screen and (max-width: 456px) {
+  @media screen and (max-width: 502px) {
     .collection_grid {
       width: 100%;
       gap: 20px;
     }
-    .collection h1 {
-      font-size: 2.5rem;
+    .collection_head {
+      font-size: 4.5rem;
     }
     .collect-div {
       width: 80%;
@@ -4022,7 +4033,7 @@ header{
     }
 
     .governance_title2 {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
     .governance_desc {
       width: 85%;
@@ -4257,10 +4268,13 @@ header{
       
     }
   }
-  @media screen and (max-width: 478px) {
+  @media screen and (max-width: 502px) {
     .roadmap h1 {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
     }
+  }
+  @media screen and (max-width: 478px) {
+   
     .right-pointer h4 {
       font-size: 1.1rem;
     }
@@ -4344,9 +4358,9 @@ header{
       width: 90%;
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 502px) {
     .powered h1 {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
     .power_grid {
       width: 100%;
@@ -4474,6 +4488,9 @@ header{
     .gang-absolute img {
       width: 30%;
     }
+    .waifu_demo {
+      width: 70%;
+    }
   }
   @media screen and (max-width: 740px) {
     .gang-absolute {
@@ -4483,17 +4500,23 @@ header{
     .gang h1 {
       font-size: 6rem;
     }
+    .waifu_demo {
+      width: 80%;
+    }
   }
-  @media screen and (max-width: 436px) {
+  @media screen and (max-width: 502px) {
     .gang {
       padding-top: 0rem;
     }
     .gang h1 {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
       padding: 0rem 1rem;
     }
     .gang_btn-div {
       flex-direction: column;
+    }
+    .waifu_demo {
+      width: 90%;
     }
   }
 
@@ -4827,6 +4850,11 @@ header{
   }
   .perk_grid {
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 502px) {
+  .perk_head {
+    font-size: 4.5rem;
   }
 }
 @media screen and (max-width: 456px) {

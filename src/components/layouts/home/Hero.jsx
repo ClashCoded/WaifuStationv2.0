@@ -68,7 +68,7 @@ const Hero = () => {
                         <MintBar />
                         </MintBarContainer>
                         <div className="flat-bt-slider style2 flex home-mint-button" style={{position: "relative", bottom: "4rem"}}>
-                            <Link to="/mint" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
+                            <Link to="/" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Mint
                             </span></Link>
                             {/* <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
                             </span></a> */}

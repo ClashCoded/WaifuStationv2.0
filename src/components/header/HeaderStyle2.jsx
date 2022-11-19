@@ -116,7 +116,7 @@ const HeaderStyle2 = () => {
                                 <nav id="main-nav" className="main-nav" ref={menuLeft} >
                                     <ul id="menu-primary-menu" className="menu">
                                     <li className="menu-item">
-                                        <Link to="/mint" rel="mint">Mint</Link>
+                                        <Link to="/" rel="mint">Mint</Link>
                                     </li>
                                     {/* <li className="menu-item">
                                         <Link to="/gacha" rel="gacha">Gacha</Link>

@@ -8,7 +8,7 @@ const Timer = () => {
   const [timerSeconds, setTimerSeconds] = useState("00");
   let interval = useRef();
   const startTimer = () => {
-    const countdownDate = new Date("May 20, 2025 10:00:00").getTime();
+    const countdownDate = new Date("May 30, 2023 10:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;
